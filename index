@@ -1,0 +1,48 @@
+const portfolio = document.querySelector("#porotito");
+
+async function datos(raw) {
+    try {
+        let consulta = await fetch(raw);
+        if (consulta.status === 429) {
+            await new Promise(resolve => setTimeout(resolve, 2000));
+            consulta = await fetch(raw);
+        }
+        let trabajos = await consulta.json();
+        console.log(trabajos);
+        
+        trabajos.forEach((trabajo) => {
+            const col = document.createElement('div');
+            col.className = 'col';
+            
+            col.innerHTML = `
+                <div class="card shadow-sm">
+                    <img class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text"></p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary"></button>
+                            </div>
+                            <small class="text-body-secondary">Reciente</small>
+                        </div>
+                    </div>
+                </div>`;
+            
+            col.querySelector('img').src = trabajo.imagen;
+            col.querySelector('.card-text').textContent = trabajo.titulo;
+            col.querySelector('button').textContent = trabajo.categoria;
+            
+            portfolio.appendChild(col);
+        });
+    } catch (error) {
+        console.error("Error al cargar los datos:", error);
+    }
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+        datos("https://raw.githubusercontent.com/magdarivas/clase10/refs/heads/main/datos.json");
+    });
+} else {
+    datos("https://raw.githubusercontent.com/magdarivas/clase10/refs/heads/main/datos.json");
+}
