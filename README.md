@@ -8,6 +8,7 @@ Perfil de mi usuario debe ser el de quien va a ver mi portafolio (quien lo veria
 | a sketch of the individual, a name, and some basic demographics | behaviors and beliefs of the persona |
 | ---------------- | ---------------- |
 | demographics     | needs and goals    |
+
 **Usuario extremo**
 | a sketch of the individual, a name, and some basic demographics | behaviors and beliefs of the persona |
 | ---------------- | ---------------- |
