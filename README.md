@@ -96,4 +96,5 @@ Aspectos positivos | Aspectos negativos
 --- | ---
 Diagramación dinámica| Demasiadas divisiones en páginas internas
 ## Referentes
-prepare un moodboard con elementos visuales, distintos de sitios y aplicaciones web, que puedan aportar novedad a su diseño
+Este moodboard-collage presenta algunos elementos visuales/formas de diagramar de páginas web que podrían ser interesantes para mi página, al igual que una posible paleta de colores básica.
+![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/moodboard.png)
