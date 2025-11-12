@@ -13,3 +13,12 @@ Curadora de museo y docente universitaria en historia del arte y textil | Busca 
 --- | ---
 De 51 o más años, residente en Santiago de Chile, sin género específico | Explorar portafolios de diseñadore/as textiles chileno/as emergentes con visión cultural o patrimonial. Comprender el discurso conceptual y técnico detrás de los proyectos
 ## ¿Qué existe que es similar a la propuesta?
+
+(imagen)
+Qué es
+----
+Fuente:
+
+Aspectos positivos | Aspectos negativos
+--- | ---
+Some content | Other content
