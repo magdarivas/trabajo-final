@@ -1,18 +1,15 @@
 # Trabajo final
 ## ¿Para qué es esta propuesta?
-**Objetivo general:** Exponer mis principales proyectos textiles realizados durante mi carrera, tanto desde mi formación universitaria como extracurrricular.
+Mi propuesta está pensada para exponer mis principales proyectos realizados durante mi carrera, tanto desde mi formación universitaria como extracurrricular. Si bien mi formación es integral, los proyectos que expongo son únicamente textil, pues han sido los que me han generado resultados más satisfactorios. Este trabajo final podría convertirse en mi futuro portafolio oficial, permitiéndome mostrar mi dominio en diferentes técnicas y también mostrar mi estilo personal para el diseño.
 ## ¿Para quiénes es esta propuesta?
 ### Usuario promedio
-Empleador del área textil | Valora la originalidad, artesanía contemporánea y el discurso detrás del diseño.Le atrae una experiencia visual limpia y estética, con foco en la imagen y el proceso creativo. Quiere una navegación intuitiva y rápida, sin ruido visual ni textos extensos.
---- | ---
-Entre 30 y 50 años, residente en Santiago de Chile, sin género específico    | Busca diseñador/as que exploren el ámbito textil; evaluar el estilo, técnicas y propuestas que presenta; contactar al diseñador para colaboraciones, encargos o compras
+Pamela Rodríguez - 36 años
 
-**Demografía:** Es coordinadora de Comunicación e Innovación de un centro de innovación, trabaja constantemente en entornos colaborativos y usa redes como LinkedIn, Behance y busca paginas web para descubrir nuevos talentos.
+**Demografía:** Es la encargada del Área de Producto de una empresa mediana centrada en productos de artesanía contemporánea. Usada redes sociales como Instagram, LinkedIn o Tiktok en busca de jóveenes diseñadores con nuevas propuestas para el mundo de la artesanía, especialmente del ámbito textil.
 
-**Comportamientos y creencias:** Cree firmemente que la creatividad y la tecnología deben unirse para generar impacto social, constantemente busca colaboradores con pensamiento estratégico y visual potente, le gusta ver exploración material, prototipos, maquetas o procesos fuera del mundo digital, pero no deja de lado lo que es visualmente atractivo pues sabe que los objetos deben venderse además de ser funcionales.
+**Comportamientos y creencias:** Cree que el diseño textil no trata únicamente de la moda y la indumentaria por temporadas, valorando el slow fashion y la mano de obra manual. Busca constantemente a colaboradores que valoren  la artesanía y que aporten con nuevas propuestas, comprendiendo tanto a nivel teórico como práctico diversas técnicas textiles.
 
-**Necesidades y objetivos:** Necesita encontrar diseñadores que puedan traducir ideas abstractas en experiencias visuales que tengan una mirada fresca dentro del área y busca perfiles creativos con sensibilidad conceptual y capacidad de comunicación visual clara.
-
+**Necesidades y objetivos:** Necesita diseñadores que permitan romper con la estigmatización de la artesanía, amplíandose hacia su exploración más contemporánea, permitiendo también su mayor divulgación y comprensión de su verdadero valor, como también potenciar su compra.
 
 ### Usuario extremo
 Curadora de museo y docente universitaria en historia del arte y textil | Busca preservar y difundir la identidad textil chilena y latinoamericana, pero también busca nuevas propuestas de las nuevas generaciones. Valora la profundidad conceptual y el oficio artesanal.
