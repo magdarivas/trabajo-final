@@ -8,7 +8,9 @@ Empleador del área textil | Valora la originalidad, artesanía contemporánea y
 Entre 30 y 50 años, residente en Santiago de Chile, sin género específico    | Busca diseñador/as que exploren el ámbito textil; evaluar el estilo, técnicas y propuestas que presenta; contactar al diseñador para colaboraciones, encargos o compras
 
 Demografía: Es coordinadora de Comunicación e Innovación de un centro de innovación, trabaja constantemente en entornos colaborativos y usa redes como LinkedIn, Behance y busca paginas web para descubrir nuevos talentos.
+
 Comportamientos y creencias: Cree firmemente que la creatividad y la tecnología deben unirse para generar impacto social, constantemente busca colaboradores con pensamiento estratégico y visual potente, le gusta ver exploración material, prototipos, maquetas o procesos fuera del mundo digital, pero no deja de lado lo que es visualmente atractivo pues sabe que los objetos deben venderse además de ser funcionales.
+
 Necesidades y objetivos: Necesita encontrar diseñadores que puedan traducir ideas abstractas en experiencias visuales que tengan una mirada fresca dentro del área y busca perfiles creativos con sensibilidad conceptual y capacidad de comunicación visual clara.
 
 
