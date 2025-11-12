@@ -22,11 +22,11 @@ Paola Silva - 52 años
 
 ## Antecedentes
 ### 1. Joana Tavares
-(imagen)
+![Image alt text](/path/to/ref1A.png)
 Qué es:
-...
+Página web que contiene el portafolio de la diseñadora g´rafica Joana Tavares
 Fuente:
-[link](https://souajoana.com/)
+<https://souajoana.com/>
 
 Aspectos positivos | Aspectos negativos
 --- | ---
