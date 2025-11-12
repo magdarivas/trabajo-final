@@ -15,10 +15,11 @@ De 51 o más años, residente en Santiago de Chile, sin género específico | Ex
 ## ¿Qué existe que es similar a la propuesta?
 
 (imagen)
-Qué es
-----
-Fuente:
 
+Qué es:
+...
+Fuente:
+...
 Aspectos positivos | Aspectos negativos
 --- | ---
 Some content | Other content
