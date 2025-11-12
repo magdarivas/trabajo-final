@@ -32,7 +32,7 @@ Paola Silva - 52 años
 
 Aspectos positivos | Aspectos negativos
 --- | ---
-Visualización de proyectos de forma dinámica, combinando entre imágenes y videos. Permite ver proyectos a mayor profundidad gracias a páginas internas| El cuadrante de la izquierda es poco estético, y cuando uno va bajando por la página el texto del cuerpo y de la cabecera quedan mezclados (la barra de la  cabecera es transparente), haciendo incómoda la lectura
+Visualización de proyectos de forma dinámica, combinando entre imágenes y videos. Permite ver proyectos a mayor profundidad gracias a páginas internas. | El cuadrante de la izquierda es poco estético, y cuando uno va bajando por la página el texto del cuerpo y de la cabecera quedan mezclados (la barra de la  cabecera es transparente), haciendo incómoda la lectura.
 
 ### 2. Studio Tyrsa
 
@@ -46,25 +46,32 @@ Visualización de proyectos de forma dinámica, combinando entre imágenes y vid
 
 Aspectos positivos | Aspectos negativos
 --- | ---
-Letra encabezados adapta su color según el fondo, tiene páginas internas que permiten conocer el proceso de diseño de cada proyecto en mayor detalle | Aunque supuestamente hay una clasificación de los proyectos, hay tan poco texto que se vuelve confuso, en el proceso de diseño de cada proyecto las imágenes están demasiado grandes, lo que dificulta la lectura. Hacen falta subtítulos para tener un sentido de orden en cada proyecto.
-### 3. NNN
-(imagen)
-Qué es:
-...
-Fuente:
-...
+Letra encabezados adapta su color según el fondo, tiene páginas internas que permiten conocer el proceso de diseño de cada proyecto en mayor detalle. | Aunque supuestamente hay una clasificación de los proyectos, hay tan poco texto que se vuelve confuso, en el proceso de diseño de cada proyecto las imágenes están demasiado grandes, lo que dificulta la lectura. Hacen falta subtítulos para tener un sentido de orden en cada proyecto.
+
+### 3. Claudia Carrara
+![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/ref1C.png)
+![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/ref2C.png)
+
+**Qué es:** página web que contiene el portafolio de Claudia Carrara, planeadora de bodas y diseñadora de eventos.
+
+**Fuente:** <https://www.claudiacarrara.it/>
+
 Aspectos positivos | Aspectos negativos
 --- | ---
-Some content | Other content
-### 4. NNN
-(imagen)
-Qué es:
-...
-Fuente:
-...
+Estética limpia y ordenada, no tiene una sobresaturación gráfica. | Las páginas internas de los lados son un poco confusas.
+
+### 4. Anna Mills Design
+![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/ref1D.png)
+![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/ref2D.png)
+
+**Qué es:** página web que contiene el portafolio de Anna Mills, diseñadora
+
+**Fuente:** <https://annamills.xyz/>
+
 Aspectos positivos | Aspectos negativos
 --- | ---
-Some content | Other content
+Gráfica limpia y ordenada. |No posee información más detallada de los proyectos, sólo una imagen o video de cada .
+
 ### 5. NNN
 (imagen)
 Qué es:
@@ -74,6 +81,7 @@ Fuente:
 Aspectos positivos | Aspectos negativos
 --- | ---
 Some content | Other content
+
 ### 6. NNN
 (imagen)
 Qué es:
@@ -83,5 +91,6 @@ Fuente:
 Aspectos positivos | Aspectos negativos
 --- | ---
 Some content | Other content
+
 ## Referentes
 prepare un moodboard con elementos visuales, distintos de sitios y aplicaciones web, que puedan aportar novedad a su diseño
