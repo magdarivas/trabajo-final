@@ -84,16 +84,16 @@ Aspectos positivos | Aspectos negativos
 --- | ---
 Si bien no es un portafolio, puede ser una manera interesante de mostrar la información de una página principal a otras internas. | Colores muy saturados.
 
-### 6. XX
+### 6. Millésime Chocolat
 ![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/ref1F.png)
 ![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/ref2F.png)
 
-**Qué es:** ...
+**Qué es:** página web de una chocolatería
 
-**Fuente:** <...>
+**Fuente:** <https://www.millesime-chocolat.be/fr/>
 
 Aspectos positivos | Aspectos negativos
 --- | ---
-... | ...
+Diagramación dinámica| Demasiadas divisiones en páginas internas
 ## Referentes
 prepare un moodboard con elementos visuales, distintos de sitios y aplicaciones web, que puedan aportar novedad a su diseño
