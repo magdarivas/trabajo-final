@@ -18,8 +18,8 @@ Entre 30 y 50 años, residente en Santiago de Chile, sin género específico    
 Curadora de museo y docente universitaria en historia del arte y textil | Busca preservar y difundir la identidad textil chilena y latinoamericana, pero también busca nuevas propuestas de las nuevas generaciones. Valora la profundidad conceptual y el oficio artesanal.
 --- | ---
 De 51 o más años, residente en Santiago de Chile, sin género específico | Explorar portafolios de diseñadore/as textiles chileno/as emergentes con visión cultural o patrimonial. Comprender el discurso conceptual y técnico detrás de los proyectos
-## ¿Qué existe que es similar a la propuesta?
-### Antecedente 1
+## Antecedentes
+### 1. NNN
 (imagen)
 Qué es:
 ...
@@ -28,7 +28,7 @@ Fuente:
 Aspectos positivos | Aspectos negativos
 --- | ---
 Some content | Other content
-### Antecedente 2
+### 2. NNN
 (imagen)
 Qué es:
 ...
@@ -37,7 +37,7 @@ Fuente:
 Aspectos positivos | Aspectos negativos
 --- | ---
 Some content | Other content
-### Antecedente 3
+### 3. NNN
 (imagen)
 Qué es:
 ...
@@ -46,7 +46,7 @@ Fuente:
 Aspectos positivos | Aspectos negativos
 --- | ---
 Some content | Other content
-### Antecedente 4
+### 4. NNN
 (imagen)
 Qué es:
 ...
@@ -55,7 +55,7 @@ Fuente:
 Aspectos positivos | Aspectos negativos
 --- | ---
 Some content | Other content
-### Antecedente 5
+### 5. NNN
 (imagen)
 Qué es:
 ...
@@ -64,7 +64,7 @@ Fuente:
 Aspectos positivos | Aspectos negativos
 --- | ---
 Some content | Other content
-### Antecedente 6
+### 6. NNN
 (imagen)
 Qué es:
 ...
@@ -73,5 +73,5 @@ Fuente:
 Aspectos positivos | Aspectos negativos
 --- | ---
 Some content | Other content
-## ¿Qué existe que puede inspirar la propuesta?
+## Referentes
 prepare un moodboard con elementos visuales, distintos de sitios y aplicaciones web, que puedan aportar novedad a su diseño
