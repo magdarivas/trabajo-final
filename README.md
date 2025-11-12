@@ -21,12 +21,13 @@ Paola Silva - 52 años
 **Necesidades y objetivos:** Explorar portafolios de diseñadore/as textiles chileno/as emergentes con visión cultural o patrimonial. Comprender el discurso conceptual y técnico detrás de los proyectos, y c´mo éstpos pueden ser un aporte para ámbitos más alternativos del diseño.
 
 ## Antecedentes
-### 1. NNN
+### 1. Joana Tavares
 (imagen)
 Qué es:
 ...
 Fuente:
-...
+[link](https://souajoana.com/)
+
 Aspectos positivos | Aspectos negativos
 --- | ---
 Some content | Other content
