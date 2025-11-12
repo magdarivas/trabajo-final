@@ -24,7 +24,7 @@ Paola Silva - 52 años
 ### 1. Joana Tavares
 
 ![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/ref1A.png)
-![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/refB.png)
+![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/ref2A.png)
 
 **Qué es:** página web que contiene el portafolio de la diseñadora gráfica Joana Tavares
 
@@ -32,16 +32,21 @@ Paola Silva - 52 años
 
 Aspectos positivos | Aspectos negativos
 --- | ---
-Some content | Other content
-### 2. NNN
-(imagen)
-Qué es:
-...
-Fuente:
-...
+Visualización de proyectos de forma dinámica, combinando entre imágenes y videos. Permite ver proyectos a mayor profundidad gracias a páginas internas| El cuadrante de la izquierda es poco estético, y cuando uno va bajando por la página el texto del cuerpo y de la cabecera quedan mezclados (la barra de la  cabecera es transparente), haciendo incómoda la lectura
+
+### 2. Studio Tyrsa
+
+![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/ref1B.png)
+![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/ref2B.png)
+![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/ref3B.png)
+
+**Qué es:** página web que contiene el portafolio del Studio Tyrsa.
+
+**Fuente:** <https://www.studiotyrsa.com>
+
 Aspectos positivos | Aspectos negativos
 --- | ---
-Some content | Other content
+Letra encabezados adapta su color según el fondo, tiene páginas internas que permiten conocer el proceso de diseño de cada proyecto en mayor detalle | Aunque supuestamente hay una clasificación de los proyectos, hay tan poco texto que se vuelve confuso, en el proceso de diseño de cada proyecto las imágenes están demasiado grandes, lo que dificulta la lectura. Hacen falta subtítulos para tener un sentido de orden en cada proyecto.
 ### 3. NNN
 (imagen)
 Qué es:
