@@ -72,25 +72,28 @@ Aspectos positivos | Aspectos negativos
 --- | ---
 Gráfica limpia y ordenada. |No posee información más detallada de los proyectos, sólo una imagen o video de cada .
 
-### 5. NNN
-(imagen)
-Qué es:
-...
-Fuente:
-...
+### 5. Bits Kingdom
+![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/ref1E.png)
+![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/ref2E.png)
+
+**Qué es:** página web de serivicios de desarrollo de software
+
+**Fuente:** <https://bitskingdom.com/>
+
 Aspectos positivos | Aspectos negativos
 --- | ---
-Some content | Other content
+Si bien no es un portafolio, puede ser una manera interesante de mostrar la información de una página principal a otras internas. | Colores muy saturados.
 
-### 6. NNN
-(imagen)
-Qué es:
-...
-Fuente:
-...
+### 6. XX
+![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/ref1F.png)
+![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/ref2F.png)
+
+**Qué es:** ...
+
+**Fuente:** <...>
+
 Aspectos positivos | Aspectos negativos
 --- | ---
-Some content | Other content
-
+... | ...
 ## Referentes
 prepare un moodboard con elementos visuales, distintos de sitios y aplicaciones web, que puedan aportar novedad a su diseño
