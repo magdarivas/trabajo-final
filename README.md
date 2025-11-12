@@ -13,9 +13,8 @@ Curadora de museo y docente universitaria en historia del arte y textil | Busca 
 --- | ---
 De 51 o más años, residente en Santiago de Chile, sin género específico | Explorar portafolios de diseñadore/as textiles chileno/as emergentes con visión cultural o patrimonial. Comprender el discurso conceptual y técnico detrás de los proyectos
 ## ¿Qué existe que es similar a la propuesta?
-
+### Antecedente 1
 (imagen)
-
 Qué es:
 ...
 Fuente:
@@ -23,3 +22,50 @@ Fuente:
 Aspectos positivos | Aspectos negativos
 --- | ---
 Some content | Other content
+### Antecedente 2
+(imagen)
+Qué es:
+...
+Fuente:
+...
+Aspectos positivos | Aspectos negativos
+--- | ---
+Some content | Other content
+### Antecedente 3
+(imagen)
+Qué es:
+...
+Fuente:
+...
+Aspectos positivos | Aspectos negativos
+--- | ---
+Some content | Other content
+### Antecedente 4
+(imagen)
+Qué es:
+...
+Fuente:
+...
+Aspectos positivos | Aspectos negativos
+--- | ---
+Some content | Other content
+### Antecedente 5
+(imagen)
+Qué es:
+...
+Fuente:
+...
+Aspectos positivos | Aspectos negativos
+--- | ---
+Some content | Other content
+### Antecedente 6
+(imagen)
+Qué es:
+...
+Fuente:
+...
+Aspectos positivos | Aspectos negativos
+--- | ---
+Some content | Other content
+## ¿Qué existe que puede inspirar la propuesta?
+prepare un moodboard con elementos visuales, distintos de sitios y aplicaciones web, que puedan aportar novedad a su diseño
