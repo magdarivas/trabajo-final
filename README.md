@@ -23,8 +23,8 @@ Paola Silva - 52 años
 ## Antecedentes
 ### 1. Joana Tavares
 
-![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/ref1A.png)
-![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/ref2A.png)
+![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/img/ref1A.png)
+![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/img/ref2A.png)
 
 **Qué es:** página web que contiene el portafolio de la diseñadora gráfica Joana Tavares
 
@@ -36,9 +36,9 @@ Visualización de proyectos de forma dinámica, combinando entre imágenes y vid
 
 ### 2. Studio Tyrsa
 
-![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/ref1B.png)
-![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/ref2B.png)
-![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/ref3B.png)
+![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/img/ref1B.png)
+![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/img/ref2B.png)
+![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/img/ref3B.png)
 
 **Qué es:** página web que contiene el portafolio del Studio Tyrsa.
 
@@ -49,8 +49,8 @@ Aspectos positivos | Aspectos negativos
 Letra encabezados adapta su color según el fondo, tiene páginas internas que permiten conocer el proceso de diseño de cada proyecto en mayor detalle. | Aunque supuestamente hay una clasificación de los proyectos, hay tan poco texto que se vuelve confuso, en el proceso de diseño de cada proyecto las imágenes están demasiado grandes, lo que dificulta la lectura. Hacen falta subtítulos para tener un sentido de orden en cada proyecto.
 
 ### 3. Claudia Carrara
-![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/ref1C.png)
-![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/ref2C.png)
+![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/img/ref1C.png)
+![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/img/ref2C.png)
 
 **Qué es:** página web que contiene el portafolio de Claudia Carrara, planeadora de bodas y diseñadora de eventos.
 
@@ -61,8 +61,8 @@ Aspectos positivos | Aspectos negativos
 Estética limpia y ordenada, no tiene una sobresaturación gráfica. | Las páginas internas de los lados son un poco confusas.
 
 ### 4. Anna Mills Design
-![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/ref1D.png)
-![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/ref2D.png)
+![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/img/ref1D.png)
+![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/img/ref2D.png)
 
 **Qué es:** página web que contiene el portafolio de Anna Mills, diseñadora
 
@@ -73,8 +73,8 @@ Aspectos positivos | Aspectos negativos
 Gráfica limpia y ordenada. |No posee información más detallada de los proyectos, sólo una imagen o video de cada .
 
 ### 5. Bits Kingdom
-![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/ref1E.png)
-![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/ref2E.png)
+![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/img/ref1E.png)
+![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/img/ref2E.png)
 
 **Qué es:** página web de serivicios de desarrollo de software
 
@@ -85,8 +85,8 @@ Aspectos positivos | Aspectos negativos
 Si bien no es un portafolio, puede ser una manera interesante de mostrar la información de una página principal a otras internas. | Colores muy saturados.
 
 ### 6. Millésime Chocolat
-![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/ref1F.png)
-![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/ref2F.png)
+![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/img/ref1F.png)
+![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/img/ref2F.png)
 
 **Qué es:** página web de una chocolatería
 
@@ -98,4 +98,4 @@ Diagramación dinámica| Demasiadas divisiones en páginas internas
 ## Referentes
 Este moodboard-collage presenta algunos elementos visuales/formas de diagramar de páginas web que podrían ser interesantes para mi página, al igual que una posible paleta de colores básica.
 
-![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/moodboard.png)
+![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/img/moodboard.png)
