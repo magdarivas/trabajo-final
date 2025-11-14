@@ -4,6 +4,7 @@ Mi propuesta está pensada para exponer mis principales proyectos realizados dur
 ## ¿Para quiénes es esta propuesta?
 ### Usuario promedio
 ![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/img/usuarioprom.png)
+
 Pamela Rodríguez - 36 años
 
 **Demografía:** es la encargada del Área de Producto de una empresa mediana centrada en productos de artesanía contemporánea. Busca tanto en la web como en redes sociales como Instagram, LinkedIn o Tiktok a jóvenes diseñadores con nuevas propuestas para el mundo de la artesanía, especialmente del ámbito textil.
