@@ -13,7 +13,7 @@ Pamela Rodríguez - 36 años
 **Necesidades y objetivos:** necesita diseñadores que permitan romper con la estigmatización de la artesanía, amplíandose hacia su exploración más contemporánea, permitiendo también su mayor divulgación y comprensión de su verdadero valor, como también potenciar su compra.
 
 ### Usuario extremo 1
-![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/img/usuarioext1.png)
+![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/img/usarioext1.png)
 
 Paola Silva - 52 años
 
@@ -24,7 +24,7 @@ Paola Silva - 52 años
 **Necesidades y objetivos:** explorar portafolios de diseñadore/as textiles chileno/as emergentes con visión cultural o patrimonial. Comprender el discurso conceptual y técnico detrás de los proyectos, y cómo éstpos pueden ser un aporte para ámbitos más alternativos del diseño.
 
 ### Usuario extremo 2
-![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/img/usuarioext2.png)
+![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/img/usarioext2.png)
 
 Tomás Reyes - 23 años
 
