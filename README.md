@@ -3,6 +3,7 @@
 Mi propuesta está pensada para exponer mis principales proyectos realizados durante mi carrera, tanto desde mi formación universitaria como extracurrricular. Si bien mi formación es integral, los proyectos que expongo son únicamente textil, pues han sido los que me han generado resultados más satisfactorios. Este trabajo final podría convertirse en mi futuro portafolio oficial, permitiéndome mostrar mi dominio en diferentes técnicas y también mostrar mi estilo personal para el diseño.
 ## ¿Para quiénes es esta propuesta?
 ### Usuario promedio
+![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/img/usuarioprom.png)
 Pamela Rodríguez - 36 años
 
 **Demografía:** es la encargada del Área de Producto de una empresa mediana centrada en productos de artesanía contemporánea. Busca tanto en la web como en redes sociales como Instagram, LinkedIn o Tiktok a jóvenes diseñadores con nuevas propuestas para el mundo de la artesanía, especialmente del ámbito textil.
@@ -12,6 +13,8 @@ Pamela Rodríguez - 36 años
 **Necesidades y objetivos:** necesita diseñadores que permitan romper con la estigmatización de la artesanía, amplíandose hacia su exploración más contemporánea, permitiendo también su mayor divulgación y comprensión de su verdadero valor, como también potenciar su compra.
 
 ### Usuario extremo 1
+![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/img/usuarioext1.png)
+
 Paola Silva - 52 años
 
 **Demografía:** curadora de museo y docente universitaria en historia del arte y textil. Tiene dominio relativamente bajo de las redes sociales, por lo que suele buscar directamente en páginas web.
@@ -21,7 +24,9 @@ Paola Silva - 52 años
 **Necesidades y objetivos:** explorar portafolios de diseñadore/as textiles chileno/as emergentes con visión cultural o patrimonial. Comprender el discurso conceptual y técnico detrás de los proyectos, y cómo éstpos pueden ser un aporte para ámbitos más alternativos del diseño.
 
 ### Usuario extremo 2
-Tomás Reyes - 26 años
+![Image alt text](https://github.com/magdarivas/trabajo-final/blob/main/img/usuarioext2.png)
+
+Tomás Reyes - 23 años
 
 **Demografía:** creador de contenido y estilista independiente. Tiene dominio alto de las redes sociales, por lo que suele buscar nuevas propuestas de diseñadores en éstas.
 
