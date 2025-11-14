@@ -11,14 +11,23 @@ Pamela Rodríguez - 36 años
 
 **Necesidades y objetivos:** necesita diseñadores que permitan romper con la estigmatización de la artesanía, amplíandose hacia su exploración más contemporánea, permitiendo también su mayor divulgación y comprensión de su verdadero valor, como también potenciar su compra.
 
-### Usuario extremo
+### Usuario extremo 1
 Paola Silva - 52 años
 
 **Demografía:** curadora de museo y docente universitaria en historia del arte y textil. Tiene dominio relativamente bajo de las redes sociales, por lo que suele buscar directamente en páginas web.
 
 **Comportamientos y creencias:** cree que la identidad textil chilena y latinoamericana también puede ser expresada en el ámbito del arte, aunque también aprecia las artesanías. Valora positivamente la profundidad conceptual y el oficio artesanal.
 
-**Necesidades y objetivos:** explorar portafolios de diseñadore/as textiles chileno/as emergentes con visión cultural o patrimonial. Comprender el discurso conceptual y técnico detrás de los proyectos, y c´mo éstpos pueden ser un aporte para ámbitos más alternativos del diseño.
+**Necesidades y objetivos:** explorar portafolios de diseñadore/as textiles chileno/as emergentes con visión cultural o patrimonial. Comprender el discurso conceptual y técnico detrás de los proyectos, y cómo éstpos pueden ser un aporte para ámbitos más alternativos del diseño.
+
+### Usuario extremo 2
+Tomás Reyes - 26 años
+
+**Demografía:** creador de contenido y estilista independiente. Tiene dominio alto de las redes sociales, por lo que suele buscar nuevas propuestas de diseñadores en éstas.
+
+**Comportamientos y creencias:** busca encontrar imágenes impactantes o piezas visualmente únicas, evaluando si el diseñador encaja en su estética o en proyectos de moda/foto. Al valorar el contenido visualmente atractivo por el uso de imágenes, prefiere aquellas publicaciones o propuestas con poco texto, que las imágenes hablen casi por si solas.
+
+**Necesidades y objetivos:** busca nuevos talentos con estética rupturista o “instagrammable”. Valora la estética visual y la presentación moderna, interesándole la autenticidad y la narrativa visual más que el texto o la técnica. Quiere que el sitio lo atrape en los primeros segundos con una identidad clara.
 
 ## Antecedentes
 ### 1. Joana Tavares
