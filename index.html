@@ -1,12 +1,604 @@
-<!doctype html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="robots" content="noindex, nofollow">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sitio web en construcción</title>
-  </head>
-  <body>
-    <h1>Hola mundo!</h1>
-  </body>
+        .project-card:nth-child(5) .project-image {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+        }
+
+        .project-card:nth-child(6) .project-image {
+            background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+        }
+
+        .project-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 2rem;
+            background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+            transform: translateY(100%);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover .project-overlay {
+            transform: translateY(0);
+        }
+
+        .project-overlay h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-overlay p {
+            color: #b0b0b0;
+        }
+
+        /* Página de Detalle del Proyecto */
+        .project-detail {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: #0a0a0a;
+            z-index: 2000;
+            overflow-y: auto;
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        .project-detail.active {
+            display: block;
+        }
+
+        .detail-header {
+            padding: 6rem 5% 3rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.8rem 1.5rem;
+            background: rgba(102, 126, 234, 0.2);
+            border: 1px solid rgba(102, 126, 234, 0.3);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s;
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+        }
+
+        .back-button:hover {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-color: transparent;
+            transform: translateX(-5px);
+        }
+
+        .detail-hero {
+            height: 60vh;
+            border-radius: 30px;
+            overflow: hidden;
+            margin-bottom: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+        }
+
+        .detail-content {
+            padding: 0 5% 5rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .detail-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .detail-meta {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .meta-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .meta-label {
+            color: #666;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .meta-value {
+            color: #ffffff;
+            font-size: 1.1rem;
+        }
+
+        .detail-description {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #b0b0b0;
+            margin-bottom: 3rem;
+        }
+
+        .detail-section {
+            margin-bottom: 4rem;
+        }
+
+        .detail-section h2 {
+            font-size: 2rem;
+            text-align: left;
+            margin-bottom: 1.5rem;
+        }
+
+        .detail-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #b0b0b0;
+            margin-bottom: 1rem;
+        }
+
+        .detail-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .detail-image {
+            width: 100%;
+            height: 300px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        /* Sección Sobre Mí */
+        .about {
+            background: rgba(102, 126, 234, 0.05);
+            border-radius: 30px;
+            padding: 5rem;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #b0b0b0;
+            margin-bottom: 1.5rem;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .skill-tag {
+            padding: 0.7rem 1.5rem;
+            background: rgba(102, 126, 234, 0.2);
+            border-radius: 50px;
+            border: 1px solid rgba(102, 126, 234, 0.3);
+            font-size: 0.9rem;
+        }
+
+        /* Contacto */
+        .contact {
+            text-align: center;
+        }
+
+        .contact-links {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-link {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 1rem 2rem;
+            border: 2px solid rgba(102, 126, 234, 0.3);
+            border-radius: 50px;
+            transition: all 0.3s;
+        }
+
+        .contact-link:hover {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-color: transparent;
+            transform: translateY(-3px);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 3rem;
+            color: #666;
+        }
+
+        /* Animaciones */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+                grid-auto-rows: 250px;
+            }
+
+            .project-card:nth-child(1),
+            .project-card:nth-child(3),
+            .project-card:nth-child(4),
+            .project-card:nth-child(6) {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+
+            .about {
+                padding: 3rem 2rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .detail-content h1 {
+                font-size: 2rem;
+            }
+
+            .detail-hero {
+                height: 40vh;
+                font-size: 3rem;
+            }
+
+            .detail-meta {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Página Principal -->
+    <div id="main-page">
+        <!-- Navegación -->
+        <nav>
+            <div class="logo" onclick="scrollToSection('inicio')">MAGDALENA RIVAS VILLALOBOS</div>
+            <ul class="nav-links">
+                <li><a href="#inicio" onclick="scrollToSection('inicio')">Inicio</a></li>
+                <li><a href="#proyectos" onclick="scrollToSection('proyectos')">Proyectos</a></li>
+                <li><a href="#sobre-mi" onclick="scrollToSection('sobre-mi')">Sobre Mí</a></li>
+                <li><a href="#contacto" onclick="scrollToSection('contacto')">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="inicio" class="hero">
+            <div class="hero-background"></div>
+            <div class="hero-content">
+                <h1>Diseñadora</h1>
+                <p>Textil como medio, diseño como mensaje</p>
+                <a href="#proyectos" class="cta-button" onclick="scrollToSection('proyectos')">Ver Mis Proyectos</a>
+            </div>
+        </section>
+
+        <!-- Proyectos -->
+        <section id="proyectos">
+            <h2>Proyectos Destacados</h2>
+            <div class="projects-grid">
+                <div class="project-card" onclick="showProjectDetail(1)">
+                    <div class="project-image"><img src="img/exp1.jpg" width="850" height="850"></div>
+                    <div class="project-overlay">
+                        <h3>Experimentaciones bordadas</h3>
+                        <p>Exploraciones iniciales Proyecto de Título</p>
+                    </div>
+                </div>
+                <div class="project-card" onclick="showProjectDetail(2)">
+                    <div class="project-image">✨</div>
+                    <div class="project-overlay">
+                        <h3>Proyecto 2</h3>
+                        <p>Diseño de Interfaz UI/UX</p>
+                    </div>
+                </div>
+                <div class="project-card" onclick="showProjectDetail(3)">
+                    <div class="project-image">🚀</div>
+                    <div class="project-overlay">
+                        <h3>Proyecto 3</h3>
+                        <p>Diseño Web Responsive</p>
+                    </div>
+                </div>
+                <div class="project-card" onclick="showProjectDetail(4)">
+                    <div class="project-image">💎</div>
+                    <div class="project-overlay">
+                        <h3>Proyecto 4</h3>
+                        <p>Ilustración Digital</p>
+                    </div>
+                </div>
+                <div class="project-card" onclick="showProjectDetail(5)">
+                    <div class="project-image">🎭</div>
+                    <div class="project-overlay">
+                        <h3>Proyecto 5</h3>
+                        <p>Diseño Editorial</p>
+                    </div>
+                </div>
+                <div class="project-card" onclick="showProjectDetail(6)">
+                    <div class="project-image">🌟</div>
+                    <div class="project-overlay">
+                        <h3>Proyecto 6</h3>
+                        <p>Motion Graphics</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre Mí -->
+        <section id="sobre-mi">
+            <div class="about">
+                <h2>Sobre Mí</h2>
+                <div class="about-content">
+                    <p>
+                        Soy un diseñador apasionado por crear experiencias visuales que conectan 
+                        con las personas. Con más de X años de experiencia, me especializo en 
+                        transformar ideas complejas en diseños simples y elegantes.
+                    </p>
+                    <p>
+                        Mi enfoque combina creatividad, funcionalidad y atención al detalle 
+                        para entregar resultados que superan las expectativas.
+                    </p>
+                    <div class="skills">
+                        <span class="skill-tag">UI/UX Design</span>
+                        <span class="skill-tag">Branding</span>
+                        <span class="skill-tag">Ilustración</span>
+                        <span class="skill-tag">Web Design</span>
+                        <span class="skill-tag">Motion Graphics</span>
+                        <span class="skill-tag">Typography</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto" class="contact">
+            <h2>¿Trabajamos Juntos?</h2>
+            <p style="color: #b0b0b0; font-size: 1.2rem; margin-bottom: 2rem;">
+                Estoy disponible para proyectos freelance y colaboraciones
+            </p>
+            <div class="contact-links">
+                <a href="mailto:tu@email.com" class="contact-link">Email</a>
+                <a href="#" class="contact-link">LinkedIn</a>
+                <a href="#" class="contact-link">Behance</a>
+                <a href="#" class="contact-link">Instagram</a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Tu Nombre. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    <!-- Página de Detalle del Proyecto -->
+    <div id="project-detail" class="project-detail">
+        <div class="detail-header">
+            <a href="#" class="back-button" onclick="hideProjectDetail()">
+                ← Volver al inicio
+            </a>
+            <div id="detail-hero" class="detail-hero"></div>
+        </div>
+        
+        <div class="detail-content">
+            <h1 id="detail-title"></h1>
+            
+            <div class="detail-meta">
+                <div class="meta-item">
+                    <span class="meta-label">Cliente</span>
+                    <span class="meta-value" id="detail-client"></span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Año</span>
+                    <span class="meta-value" id="detail-year"></span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Categoría</span>
+                    <span class="meta-value" id="detail-category"></span>
+                </div>
+            </div>
+
+            <p class="detail-description" id="detail-description"></p>
+
+            <div class="detail-section">
+                <h2>El Desafío</h2>
+                <p id="detail-challenge"></p>
+            </div>
+
+            <div class="detail-section">
+                <h2>La Solución</h2>
+                <p id="detail-solution"></p>
+            </div>
+
+            <div class="detail-section">
+                <h2>Galería del Proyecto</h2>
+                <div class="detail-images" id="detail-gallery"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Datos de los proyectos
+        const projectsData = {
+            1: {
+                title: "Experimentaciones bordadas",
+                client: "Empresa Tech Inc.",
+                year: "2024",
+                category: "Branding e Identidad Visual",
+                icon: "🎨",
+                gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+                description: "Desarrollo completo de identidad visual para una empresa de tecnología emergente, incluyendo logotipo, paleta de colores, tipografía y guías de estilo.",
+                challenge: "El cliente necesitaba una identidad que transmitiera innovación y confianza, mientras se diferenciaba en un mercado saturado de competidores con estéticas similares.",
+                solution: "Creamos una identidad visual única que combina elementos modernos con toques humanos. La paleta de colores vibrantes y la tipografía contemporánea logran un balance perfecto entre profesionalismo y accesibilidad."
+            },
+            2: {
+                title: "Proyecto 2 - Interfaz UI/UX",
+                client: "StartupApp",
+                year: "2024",
+                category: "Diseño de Interfaz UI/UX",
+                icon: "✨",
+                gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+                description: "Diseño completo de interfaz y experiencia de usuario para una aplicación móvil de productividad, enfocada en simplicidad y eficiencia.",
+                challenge: "Los usuarios necesitaban una herramienta poderosa pero sin complejidad. El reto era organizar múltiples funciones sin abrumar al usuario.",
+                solution: "Implementamos un sistema de navegación intuitivo con micro-interacciones que guían al usuario. El diseño minimalista permite acceder a funciones avanzadas solo cuando se necesitan."
+            },
+            3: {
+                title: "Proyecto 3 - Sitio Web Responsive",
+                client: "Estudio Creativo",
+                year: "2023",
+                category: "Diseño Web Responsive",
+                icon: "🚀",
+                gradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+                description: "Diseño y desarrollo de sitio web responsive para un estudio de arquitectura, destacando sus proyectos con elegancia y funcionalidad.",
+                challenge: "Presentar proyectos arquitectónicos complejos de manera que funcione perfectamente en dispositivos móviles sin perder el impacto visual.",
+                solution: "Desarrollamos un sistema de grid flexible que se adapta inteligentemente a cualquier pantalla, manteniendo la jerarquía visual y la calidad de las imágenes."
+            },
+            4: {
+                title: "Proyecto 4 - Ilustración Digital",
+                client: "Editorial Moderna",
+                year: "2024",
+                category: "Ilustración Digital",
+                icon: "💎",
+                gradient: "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+                description: "Serie de ilustraciones para un libro infantil, combinando técnicas digitales con un estilo único que captura la imaginación de los niños.",
+                challenge: "Crear ilustraciones que fueran atractivas para niños pero también apreciadas por padres, manteniendo coherencia visual en 40+ ilustraciones.",
+                solution: "Desarrollamos un estilo artístico distintivo con personajes memorables y paleta de colores vibrante pero armoniosa. Cada ilustración cuenta una historia por sí misma."
+            },
+            5: {
+                title: "Proyecto 5 - Diseño Editorial",
+                client: "Revista Cultural",
+                year: "2023",
+                category: "Diseño Editorial",
+                icon: "🎭",
+                gradient: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
+                description: "Rediseño completo de revista cultural trimestral, incluyendo sistema de retículas, tipografía y dirección de arte fotográfica.",
+                challenge: "Modernizar una publicación de 30 años de historia sin perder su esencia, haciéndola relevante para nuevas generaciones.",
+                solution: "Mantuvimos elementos icónicos de la revista mientras introducimos una retícula moderna y tipografía contemporánea. El resultado respeta la tradición pero se siente completamente actual."
+            },
+            6: {
+                title: "Proyecto 6 - Motion Graphics",
+                client: "Agencia Digital",
+                year: "2024",
+                category: "Motion Graphics",
+                icon: "🌟",
+                gradient: "linear-gradient(135deg, #30cfd0 0%, #330867 100%)",
+                description: "Producción de animaciones y motion graphics para campaña digital de producto, incluyendo videos explicativos y contenido para redes sociales.",
+                challenge: "Comunicar características técnicas complejas de forma visual y entretenida en videos de menos de 30 segundos.",
+                solution: "Desarrollamos un sistema de animaciones dinámicas con transiciones fluidas y metáforas visuales que simplifican conceptos complejos. El resultado es contenido altamente compartible."
+            }
+        };
+
+        // Función para mostrar detalle del proyecto
+        function showProjectDetail(projectId) {
+            const project = projectsData[projectId];
+            const detailPage = document.getElementById('project-detail');
+            const mainPage = document.getElementById('main-page');
+            
+            // Llenar los datos
+            document.getElementById('detail-title').textContent = project.title;
+            document.getElementById('detail-client').textContent = project.client;
+            document.getElementById('detail-year').textContent = project.year;
+            document.getElementById('detail-category').textContent = project.category;
+            document.getElementById('detail-description').textContent = project.description;
+            document.getElementById('detail-challenge').textContent = project.challenge;
+            document.getElementById('detail-solution').textContent = project.solution;
+            
+            // Hero con ícono y gradiente
+            const hero = document.getElementById('detail-hero');
+            hero.style.background = project.gradient;
+            hero.textContent = project.icon;
+            
+            // Galería de imágenes (placeholder)
+            const gallery = document.getElementById('detail-gallery');
+            gallery.innerHTML = `
+                <div class="detail-image" style="background: ${project.gradient}">${project.icon}</div>
+                <div class="detail-image" style="background: ${project.gradient}; opacity: 0.8">${project.icon}</div>
+                <div class="detail-image" style="background: ${project.gradient}; opacity: 0.6">${project.icon}</div>
+            `;
+            
+            // Mostrar página de detalle
+            mainPage.style.display = 'none';
+            detailPage.classList.add('active');
+            window.scrollTo(0, 0);
+        }
+
+        // Función para ocultar detalle del proyecto
+        function hideProjectDetail() {
+            const detailPage = document.getElementById('project-detail');
+            const mainPage = document.getElementById('main-page');
+            
+            detailPage.classList.remove('active');
+            mainPage.style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+
+        // Función para scroll suave
+        function scrollToSection(sectionId) {
+            event.preventDefault();
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+    </script>
+</body>
 </html>
