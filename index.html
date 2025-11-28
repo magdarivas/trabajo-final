@@ -66,26 +66,33 @@
             margin: 0;
         }
 
-        hero-background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: 
-                linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-                url('img/img/banner.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            z-index: 0;
-        }
-
+      .hero-background {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-image: url('img/img/banner.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          z-index: 0
+      }
+      /* Agrega un nuevo elemento para el overlay */
+      .hero-background::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.4);
+          z-index: 1;
+      }
         .hero-content {
-            text-align: center;
-            z-index: 1;
+             text-align: center;
+            z-index: 2; /* Cambia de 1 a 2 para que esté sobre el overlay */
             animation: fadeInUp 1s ease-out;
-            padding-top: 40vh; /* Mueve el texto hacia abajo desde el centro */
         }
 
         .hero h1 {
