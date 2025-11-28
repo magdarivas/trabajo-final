@@ -731,6 +731,7 @@
                 client: "Revista Cultural",
                 year: "2023",
                 category: "Diseño Editorial",
+                iconType: "video",
                 icon: "img/video/videot7.mp4",
                 gradient: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
                 description: "Rediseño completo de revista cultural trimestral, incluyendo sistema de retículas, tipografía y dirección de arte fotográfica.",
@@ -771,7 +772,16 @@
             // Hero con ícono y gradiente
             const hero = document.getElementById('detail-hero');
             hero.style.background = project.gradient;
-            hero.textContent = project.icon;
+            
+            if (project.iconType === 'image') {
+                hero.innerHTML = `<img src="${project.icon}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 30px;">`;
+            } else if (project.iconType === 'video') {
+                hero.innerHTML = `<video autoplay loop muted style="width: 100%; height: 100%; object-fit: cover; border-radius: 30px;">
+                    <source src="${project.icon}" type="video/mp4">
+                </video>`;
+            } else {
+                hero.textContent = project.icon; // Para emojis
+            }
             
             // Galería de imágenes con emojis únicos por proyecto
             const gallery = document.getElementById('detail-gallery');
