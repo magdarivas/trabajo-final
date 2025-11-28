@@ -688,7 +688,7 @@
                 description: "Desarrollo completo de identidad visual para una empresa de tecnología emergente, incluyendo logotipo, paleta de colores, tipografía y guías de estilo.",
                 challenge: "El cliente necesitaba una identidad que transmitiera innovación y confianza, mientras se diferenciaba en un mercado saturado de competidores con estéticas similares.",
                 solution: "Creamos una identidad visual única que combina elementos modernos con toques humanos. La paleta de colores vibrantes y la tipografía contemporánea logran un balance perfecto entre profesionalismo y accesibilidad.",
-                galleryEmojis: ["📸", "🖼️", "🎞️"]
+                galleryImages: ["📸", "🖼️", "🎞️"]
             },
             2: {
                 title: "Proyecto 2 - Interfaz UI/UX",
@@ -700,7 +700,7 @@
                 description: "Diseño completo de interfaz y experiencia de usuario para una aplicación móvil de productividad, enfocada en simplicidad y eficiencia.",
                 challenge: "Los usuarios necesitaban una herramienta poderosa pero sin complejidad. El reto era organizar múltiples funciones sin abrumar al usuario.",
                 solution: "Implementamos un sistema de navegación intuitivo con micro-interacciones que guían al usuario. El diseño minimalista permite acceder a funciones avanzadas solo cuando se necesitan.",
-                galleryEmojis: ["📱", "💻", "⌨️"]
+                galleryImages: ["📱", "💻", "⌨️"]
             },
             3: {
                 title: "Proyecto 3 - Sitio Web Responsive",
@@ -712,7 +712,7 @@
                 description: "Diseño y desarrollo de sitio web responsive para un estudio de arquitectura, destacando sus proyectos con elegancia y funcionalidad.",
                 challenge: "Presentar proyectos arquitectónicos complejos de manera que funcione perfectamente en dispositivos móviles sin perder el impacto visual.",
                 solution: "Desarrollamos un sistema de grid flexible que se adapta inteligentemente a cualquier pantalla, manteniendo la jerarquía visual y la calidad de las imágenes.",
-                galleryEmojis: ["🌐", "📐", "🏗️"]
+                galleryImages: ["🌐", "📐", "🏗️"]
             },
             4: {
                 title: "Proyecto 4 - Ilustración Digital",
@@ -724,7 +724,7 @@
                 description: "Serie de ilustraciones para un libro infantil, combinando técnicas digitales con un estilo único que captura la imaginación de los niños.",
                 challenge: "Crear ilustraciones que fueran atractivas para niños pero también apreciadas por padres, manteniendo coherencia visual en 40+ ilustraciones.",
                 solution: "Desarrollamos un estilo artístico distintivo con personajes memorables y paleta de colores vibrante pero armoniosa. Cada ilustración cuenta una historia por sí misma.",
-                galleryEmojis: ["🎨", "✏️", "🖌️"]
+                galleryImages: ["🎨", "✏️", "🖌️"]
             },
             5: {
                 title: "Proyecto 5 - Diseño Editorial",
@@ -736,7 +736,7 @@
                 description: "Rediseño completo de revista cultural trimestral, incluyendo sistema de retículas, tipografía y dirección de arte fotográfica.",
                 challenge: "Modernizar una publicación de 30 años de historia sin perder su esencia, haciéndola relevante para nuevas generaciones.",
                 solution: "Mantuvimos elementos icónicos de la revista mientras introducimos una retícula moderna y tipografía contemporánea. El resultado respeta la tradición pero se siente completamente actual.",
-                galleryEmojis: ["img/img/moodboardt7.jpg", "img/img/patronhakama.jpg", "img/img/bordadot7.jpg"]
+                galleryImages: ["img/img/moodboardt7.jpg", "img/img/patronhakama.jpg", "img/img/bordadot7.jpg"]
 
             },
             6: {
@@ -749,7 +749,7 @@
                 description: "Producción de animaciones y motion graphics para campaña digital de producto, incluyendo videos explicativos y contenido para redes sociales.",
                 challenge: "Comunicar características técnicas complejas de forma visual y entretenida en videos de menos de 30 segundos.",
                 solution: "Desarrollamos un sistema de animaciones dinámicas con transiciones fluidas y metáforas visuales que simplifican conceptos complejos. El resultado es contenido altamente compartible.",
-                galleryEmojis: ["🎬", "🎥", "🎞️"]
+                galleryImages: ["🎬", "🎥", "🎞️"]
             }
         };
 
@@ -776,9 +776,15 @@
             // Galería de imágenes con emojis únicos por proyecto
             const gallery = document.getElementById('detail-gallery');
             gallery.innerHTML = `
-                <div class="detail-image" style="background: ${project.gradient}">${project.galleryEmojis[0]}</div>
-                <div class="detail-image" style="background: ${project.gradient}; opacity: 0.8">${project.galleryEmojis[1]}</div>
-                <div class="detail-image" style="background: ${project.gradient}; opacity: 0.6">${project.galleryEmojis[2]}</div>
+                <div class="detail-image" style="background: ${project.gradient}">
+                    <img src="${project.galleryImages[0]}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+                </div>
+                <div class="detail-image" style="background: ${project.gradient}">
+                   <img src="${project.galleryImages[1]}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+                </div>
+                <div class="detail-image" style="background: ${project.gradient}">
+                    <img src="${project.galleryImages[2]}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+                </div>
             `;
             
             // Mostrar página de detalle
