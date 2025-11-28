@@ -61,12 +61,9 @@
 
         /* Hero Section */
         .hero {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            overflow: hidden;
+            padding: 0;
+            max-width: none;
+            margin: 0;
         }
 
         .hero-background {
@@ -87,6 +84,7 @@
             text-align: center;
             z-index: 1;
             animation: fadeInUp 1s ease-out;
+            padding-top: 40vh; /* Mueve el texto hacia abajo desde el centro */
         }
 
         .hero h1 {
@@ -124,8 +122,8 @@
 
         /* Secciones */
         section {
-            padding: 0;
-            max-width: none;
+            padding: 5rem 5%;
+            max-width: 1400px;
             margin: 0 auto;
         }
 
