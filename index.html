@@ -3,9 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="noindex, nofollow">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portafolio Magdalena Rivas V - Diseñadora</title>
+    <title>Portafolio - Magdalena Rivas Villalobos</title>
     <style>
         * {
             margin: 0;
@@ -535,7 +533,7 @@
             <h2>Proyectos Destacados</h2>
             <div class="projects-grid">
                 <div class="project-card" onclick="showProjectDetail(1)">
-                    <div class="project-image"><img src="img/img/textilesandinos.jpg" width="852" height="639"></div>
+                    <div class="project-image"><img src="img/img/textilesandinos.jpg" width="450" height="450"></div>
                     <div class="project-overlay">
                         <h3>Bolso tejido a telar</h3>
                         <p>OPR Textiles Andinos</p>
@@ -552,7 +550,7 @@
                     <div class="project-image"><img src="img/img/exp1.jpg" width="450" height="450"></div>
                     <div class="project-overlay">
                         <h3>Experimentaciones bordadas</h3>
-                        <p>Exploraciones iniciales del Proyecto de Título</p>
+                        <p>Exploraciones iniciales de mi Proyecto de Título</p>
                     </div>
                 </div>
                 <div class="project-card" onclick="showProjectDetail(4)">
@@ -675,7 +673,7 @@
         // Datos de los proyectos
         const projectsData = {
             1: {
-                title: "Experimentaciones bordadas",
+                title: "Proyecto 1 - Branding Corporativo",
                 client: "Empresa Tech Inc.",
                 year: "2024",
                 category: "Branding e Identidad Visual",
@@ -683,7 +681,8 @@
                 gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
                 description: "Desarrollo completo de identidad visual para una empresa de tecnología emergente, incluyendo logotipo, paleta de colores, tipografía y guías de estilo.",
                 challenge: "El cliente necesitaba una identidad que transmitiera innovación y confianza, mientras se diferenciaba en un mercado saturado de competidores con estéticas similares.",
-                solution: "Creamos una identidad visual única que combina elementos modernos con toques humanos. La paleta de colores vibrantes y la tipografía contemporánea logran un balance perfecto entre profesionalismo y accesibilidad."
+                solution: "Creamos una identidad visual única que combina elementos modernos con toques humanos. La paleta de colores vibrantes y la tipografía contemporánea logran un balance perfecto entre profesionalismo y accesibilidad.",
+                galleryEmojis: ["📸", "🖼️", "🎞️"]
             },
             2: {
                 title: "Proyecto 2 - Interfaz UI/UX",
@@ -694,7 +693,8 @@
                 gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
                 description: "Diseño completo de interfaz y experiencia de usuario para una aplicación móvil de productividad, enfocada en simplicidad y eficiencia.",
                 challenge: "Los usuarios necesitaban una herramienta poderosa pero sin complejidad. El reto era organizar múltiples funciones sin abrumar al usuario.",
-                solution: "Implementamos un sistema de navegación intuitivo con micro-interacciones que guían al usuario. El diseño minimalista permite acceder a funciones avanzadas solo cuando se necesitan."
+                solution: "Implementamos un sistema de navegación intuitivo con micro-interacciones que guían al usuario. El diseño minimalista permite acceder a funciones avanzadas solo cuando se necesitan.",
+                galleryEmojis: ["📱", "💻", "⌨️"]
             },
             3: {
                 title: "Proyecto 3 - Sitio Web Responsive",
@@ -705,7 +705,8 @@
                 gradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
                 description: "Diseño y desarrollo de sitio web responsive para un estudio de arquitectura, destacando sus proyectos con elegancia y funcionalidad.",
                 challenge: "Presentar proyectos arquitectónicos complejos de manera que funcione perfectamente en dispositivos móviles sin perder el impacto visual.",
-                solution: "Desarrollamos un sistema de grid flexible que se adapta inteligentemente a cualquier pantalla, manteniendo la jerarquía visual y la calidad de las imágenes."
+                solution: "Desarrollamos un sistema de grid flexible que se adapta inteligentemente a cualquier pantalla, manteniendo la jerarquía visual y la calidad de las imágenes.",
+                galleryEmojis: ["🌐", "📐", "🏗️"]
             },
             4: {
                 title: "Proyecto 4 - Ilustración Digital",
@@ -716,7 +717,8 @@
                 gradient: "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
                 description: "Serie de ilustraciones para un libro infantil, combinando técnicas digitales con un estilo único que captura la imaginación de los niños.",
                 challenge: "Crear ilustraciones que fueran atractivas para niños pero también apreciadas por padres, manteniendo coherencia visual en 40+ ilustraciones.",
-                solution: "Desarrollamos un estilo artístico distintivo con personajes memorables y paleta de colores vibrante pero armoniosa. Cada ilustración cuenta una historia por sí misma."
+                solution: "Desarrollamos un estilo artístico distintivo con personajes memorables y paleta de colores vibrante pero armoniosa. Cada ilustración cuenta una historia por sí misma.",
+                galleryEmojis: ["🎨", "✏️", "🖌️"]
             },
             5: {
                 title: "Proyecto 5 - Diseño Editorial",
@@ -727,7 +729,8 @@
                 gradient: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
                 description: "Rediseño completo de revista cultural trimestral, incluyendo sistema de retículas, tipografía y dirección de arte fotográfica.",
                 challenge: "Modernizar una publicación de 30 años de historia sin perder su esencia, haciéndola relevante para nuevas generaciones.",
-                solution: "Mantuvimos elementos icónicos de la revista mientras introducimos una retícula moderna y tipografía contemporánea. El resultado respeta la tradición pero se siente completamente actual."
+                solution: "Mantuvimos elementos icónicos de la revista mientras introducimos una retícula moderna y tipografía contemporánea. El resultado respeta la tradición pero se siente completamente actual.",
+                galleryEmojis: ["📖", "📰", "📄"]
             },
             6: {
                 title: "Proyecto 6 - Motion Graphics",
@@ -738,7 +741,8 @@
                 gradient: "linear-gradient(135deg, #30cfd0 0%, #330867 100%)",
                 description: "Producción de animaciones y motion graphics para campaña digital de producto, incluyendo videos explicativos y contenido para redes sociales.",
                 challenge: "Comunicar características técnicas complejas de forma visual y entretenida en videos de menos de 30 segundos.",
-                solution: "Desarrollamos un sistema de animaciones dinámicas con transiciones fluidas y metáforas visuales que simplifican conceptos complejos. El resultado es contenido altamente compartible."
+                solution: "Desarrollamos un sistema de animaciones dinámicas con transiciones fluidas y metáforas visuales que simplifican conceptos complejos. El resultado es contenido altamente compartible.",
+                galleryEmojis: ["🎬", "🎥", "🎞️"]
             }
         };
 
@@ -762,12 +766,12 @@
             hero.style.background = project.gradient;
             hero.textContent = project.icon;
             
-            // Galería de imágenes (placeholder)
+            // Galería de imágenes con emojis únicos por proyecto
             const gallery = document.getElementById('detail-gallery');
             gallery.innerHTML = `
-                <div class="detail-image" style="background: ${project.gradient}">${project.icon}</div>
-                <div class="detail-image" style="background: ${project.gradient}; opacity: 0.8">${project.icon}</div>
-                <div class="detail-image" style="background: ${project.gradient}; opacity: 0.6">${project.icon}</div>
+                <div class="detail-image" style="background: ${project.gradient}">${project.galleryEmojis[0]}</div>
+                <div class="detail-image" style="background: ${project.gradient}; opacity: 0.8">${project.galleryEmojis[1]}</div>
+                <div class="detail-image" style="background: ${project.gradient}; opacity: 0.6">${project.galleryEmojis[2]}</div>
             `;
             
             // Mostrar página de detalle
