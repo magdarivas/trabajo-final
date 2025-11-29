@@ -28,14 +28,17 @@
             justify-content: space-between;
             align-items: center;
             z-index: 1000;
-            background: rgba(232, 136, 226, 0.9);
+            background: #e888e2;
             backdrop-filter: blur(10px);
         }
 
         .logo {
             font-size: 1.5rem;
             font-weight: bold;
-            color: #272223;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             cursor: pointer;
         }
 
@@ -133,6 +136,10 @@
             padding: 5rem 5%;
             max-width: 1400px;
             margin: 0 auto;
+        }
+
+        #proyectos {
+            padding: 5rem 5%;
         }
 
         h2 {
@@ -376,10 +383,12 @@
             width: 100%;
             height: 300px;
             border-radius: 20px;
-            overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
+            font-size: 3rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            overflow: hidden;
         }
 
         .detail-image img {
@@ -390,7 +399,7 @@
 
         /* Sección Sobre Mí */
         .about {
-            background: rgba(232, 136, 226, 0.1);
+            background: rgba(102, 126, 234, 0.05);
             border-radius: 30px;
             padding: 5rem;
         }
@@ -418,9 +427,9 @@
 
         .skill-tag {
             padding: 0.7rem 1.5rem;
-            background: rgba(232, 136, 226, 0.2);
+            background: rgba(102, 126, 234, 0.2);
             border-radius: 50px;
-            border: 1px solid rgba(232, 136, 226, 0.3);
+            border: 1px solid rgba(102, 126, 234, 0.3);
             font-size: 0.9rem;
         }
 
@@ -479,7 +488,6 @@
             }
             to {
                 opacity: 1;
-                transform: translateY(0);
             }
         }
 
