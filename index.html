@@ -818,6 +818,55 @@
             document.getElementById('detail-category').textContent = project.category;
             document.getElementById('detail-description').textContent = project.description;
             document.getElementById('detail-challenge').textContent
+            document.getElementById('detail-challenge').textContent = project.challenge;
+            document.getElementById('detail-solution').textContent = project.solution;
+            
+            // Hero con ícono y gradiente
+            const hero = document.getElementById('detail-hero');
+            hero.style.background = project.gradient;
+            
+            if (project.iconType === 'image') {
+                hero.innerHTML = `<img src="${project.icon}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 30px;">`;
+            } else if (project.iconType === 'video') {
+                hero.innerHTML = `<video autoplay loop muted style="width: 100%; height: 100%; object-fit: cover; border-radius: 30px;">
+                    <source src="${project.icon}" type="video/mp4">
+                </video>`;
+            } else {
+                hero.textContent = project.icon;
+            }
+            
+            // Galería de imágenes con imágenes reales
+            const gallery = document.getElementById('detail-gallery');
+            gallery.innerHTML = `
+                <div class="detail-image">
+                    <img src="${project.galleryImages[0]}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+                </div>
+                <div class="detail-image">
+                    <img src="${project.galleryImages[1]}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+                </div>
+                <div class="detail-image">
+                    <img src="${project.galleryImages[2]}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+                </div>
+            `;
+            
+            // Mostrar página de detalle
+            mainPage.style.display = 'none';
+            detailPage.classList.add('active');
+            window.scrollTo(0, 0);
+        }
+
+        // Función para ocultar detalle del proyecto
+        function hideProjectDetail() {
+            const detailPage = document.getElementById('project-detail');
+            const mainPage = document.getElementById('main-page');
+            
+            detailPage.classList.remove('active');
+            mainPage.style.display = 'block';
+            window.scrollTo(0, 0);
+            return false;
+        }
+
+      
         // Función para scroll suave
         function scrollToSection(sectionId) {
             event.preventDefault();
