@@ -78,7 +78,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url('img/img/banner.png');
+            background-image: url('img/img/banner.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -91,7 +91,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.3);
+            background: rgba(0, 0, 0, 0.1);
             z-index: 1;
         }
 
@@ -104,13 +104,17 @@
         .hero h1 {
             font-size: 4rem;
             margin-bottom: 1rem;
-            color: #ffffff;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         .hero p {
             font-size: 1.5rem;
             color: #ffffff;
             margin-bottom: 2rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
 
         .cta-button {
@@ -312,6 +316,14 @@
             font-size: 5rem;
         }
 
+        .detail-hero img,
+        .detail-hero video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 30px;
+        }
+
         .detail-content {
             padding: 0 5% 5rem;
             max-width: 1000px;
@@ -383,18 +395,19 @@
             width: 100%;
             height: 300px;
             border-radius: 20px;
+            overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 3rem;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            overflow: hidden;
         }
 
         .detail-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            border-radius: 20px;
         }
 
         /* Sección Sobre Mí */
@@ -573,54 +586,42 @@
             <h2>Proyectos Destacados</h2>
             <div class="projects-grid">
                 <div class="project-card" onclick="showProjectDetail(1)">
-                    <div class="project-image">
-                        <img src="img/img/textilesandinos.jpg" alt="Bolso tejido a telar">
-                    </div>
+                    <div class="project-image"><img src="img/img/textilesandinos.jpg" alt="Bolso tejido a telar"></div>
                     <div class="project-overlay">
                         <h3>Bolso tejido a telar</h3>
                         <p>OPR Textiles Andinos</p>
                     </div>
                 </div>
                 <div class="project-card" onclick="showProjectDetail(2)">
-                    <div class="project-image">
-                        <img src="img/img/tallercuatro.jpg" alt="Bolso upcycling Mad Smile">
-                    </div>
+                    <div class="project-image"><img src="img/img/tallercuatro.jpg" alt="Bolso upcycling Mad Smile"></div>
                     <div class="project-overlay">
                         <h3>Bolso upcycling Mad Smile</h3>
                         <p>Taller 4</p>
                     </div>
                 </div>
                 <div class="project-card" onclick="showProjectDetail(3)">
-                    <div class="project-image">
-                        <img src="img/img/exp1.jpg" alt="Experimentaciones bordadas">
-                    </div>
+                    <div class="project-image"><img src="img/img/exp1.jpg" alt="Experimentaciones bordadas"></div>
                     <div class="project-overlay">
                         <h3>Experimentaciones bordadas</h3>
                         <p>Exploraciones iniciales de mi Proyecto de Título</p>
                     </div>
                 </div>
                 <div class="project-card" onclick="showProjectDetail(4)">
-                    <div class="project-image">
-                        <img src="img/img/brocheregalo.jpg" alt="Broche bordado">
-                    </div>
+                    <div class="project-image"><img src="img/img/brocheregalo.jpg" alt="Broche bordado"></div>
                     <div class="project-overlay">
                         <h3>Broche bordado</h3>
                         <p>Regalo para emprendedora de bolsos Criminal Cyrcus</p>
                     </div>
                 </div>
                 <div class="project-card" onclick="showProjectDetail(5)">
-                    <div class="project-image">
-                        <img src="img/img/tallersiete.jpg" alt="Calidez nostálgica">
-                    </div>
+                    <div class="project-image"><img src="img/img/tallersiete.jpg" alt="Calidez nostálgica"></div>
                     <div class="project-overlay">
                         <h3>Calidez nostálgica</h3>
                         <p>Taller siete</p>
                     </div>
                 </div>
                 <div class="project-card" onclick="showProjectDetail(6)">
-                    <div class="project-image">
-                        <img src="img/img/19.jpg" alt="Calidez silvestre">
-                    </div>
+                    <div class="project-image"><img src="img/img/19.jpg" alt="Calidez silvestre"></div>
                     <div class="project-overlay">
                         <h3>Calidez silvestre</h3>
                         <p>OPR Sistemas de Configuración desde el textil</p>
@@ -635,21 +636,21 @@
                 <h2>Sobre Mí</h2>
                 <div class="about-content">
                     <p>
-                        Soy una diseñadora apasionada por el textil como medio de expresión y comunicación.
-                        Mi trabajo explora la intersección entre técnicas tradicionales y contemporáneas,
-                        creando piezas que cuentan historias a través de texturas, colores y materiales.
+                        Soy un diseñador apasionado por crear experiencias visuales que conectan 
+                        con las personas. Con más de X años de experiencia, me especializo en 
+                        transformar ideas complejas en diseños simples y elegantes.
                     </p>
                     <p>
-                        Mi enfoque combina la experimentación con el bordado, el telar y técnicas de upcycling
-                        para dar vida a proyectos únicos que celebran la artesanía y la sostenibilidad.
+                        Mi enfoque combina creatividad, funcionalidad y atención al detalle 
+                        para entregar resultados que superan las expectativas.
                     </p>
                     <div class="skills">
-                        <span class="skill-tag">Diseño Textil</span>
-                        <span class="skill-tag">Bordado</span>
-                        <span class="skill-tag">Telar</span>
-                        <span class="skill-tag">Upcycling</span>
-                        <span class="skill-tag">Diseño Sostenible</span>
-                        <span class="skill-tag">Experimentación</span>
+                        <span class="skill-tag">UI/UX Design</span>
+                        <span class="skill-tag">Branding</span>
+                        <span class="skill-tag">Ilustración</span>
+                        <span class="skill-tag">Web Design</span>
+                        <span class="skill-tag">Motion Graphics</span>
+                        <span class="skill-tag">Typography</span>
                     </div>
                 </div>
             </div>
@@ -725,60 +726,62 @@
         // Datos de los proyectos
         const projectsData = {
             1: {
-                title: "Bolso tejido a telar - OPR Textiles Andinos",
-                client: "Textiles Andinos",
+                title: "Bolso tejido a telar",
+                client: "OPR Textiles Andinos",
                 year: "2024",
                 category: "Diseño Textil",
-                icon: "img/img/textilesandinos.jpg",
                 iconType: "image",
+                icon: "img/img/textilesandinos.jpg",
                 gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-                description: "Bolso tejido a telar inspirado en técnicas ancestrales andinas, combinando tradición y diseño contemporáneo.",
-                challenge: "Crear una pieza que honre las técnicas tradicionales de telar mientras se adapta a las necesidades funcionales modernas.",
-                solution: "Desarrollé un diseño que integra patrones geométricos andinos con una estructura ergonómica, utilizando fibras naturales y tintes orgánicos.",
+                description: "Desarrollo completo de identidad visual para una empresa de tecnología emergente, incluyendo logotipo, paleta de colores, tipografía y guías de estilo.",
+                challenge: "El cliente necesitaba una identidad que transmitiera innovación y confianza, mientras se diferenciaba en un mercado saturado de competidores con estéticas similares.",
+                solution: "Creamos una identidad visual única que combina elementos modernos con toques humanos. La paleta de colores vibrantes y la tipografía contemporánea logran un balance perfecto entre profesionalismo y accesibilidad.",
                 galleryImages: ["img/img/textilesandinos.jpg", "img/img/textilesandinos.jpg", "img/img/textilesandinos.jpg"]
             },
             2: {
-                title: "Bolso upcycling Mad Smile - Taller 4",
+                title: "Bolso upcycling Mad Smile",
                 client: "Taller 4",
                 year: "2024",
-                category: "Upcycling",
-                icon: "img/img/tallercuatro.jpg",
+                category: "Diseño Textil",
                 iconType: "image",
+                icon: "img/img/tallercuatro.jpg",
                 gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-                description: "Bolso creado a partir de materiales reciclado
+                description: "Diseño completo de interfaz y experiencia de usuario para una aplicación móvil de productividad, enfocada en simplicidad y eficiencia.",
                 challenge: "Los usuarios necesitaban una herramienta poderosa pero sin complejidad. El reto era organizar múltiples funciones sin abrumar al usuario.",
                 solution: "Implementamos un sistema de navegación intuitivo con micro-interacciones que guían al usuario. El diseño minimalista permite acceder a funciones avanzadas solo cuando se necesitan.",
-                galleryImages: ["📱", "💻", "⌨️"]
+                galleryImages: ["img/img/tallercuatro.jpg", "img/img/tallercuatro.jpg", "img/img/tallercuatro.jpg"]
             },
             3: {
-                title: "Proyecto 3 - Sitio Web Responsive",
-                client: "Estudio Creativo",
+                title: "Experimentaciones bordadas",
+                client: "Proyecto de Título",
                 year: "2023",
-                category: "Diseño Web Responsive",
-                icon: "🚀",
+                category: "Diseño Textil",
+                iconType: "image",
+                icon: "img/img/exp1.jpg",
                 gradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
                 description: "Diseño y desarrollo de sitio web responsive para un estudio de arquitectura, destacando sus proyectos con elegancia y funcionalidad.",
                 challenge: "Presentar proyectos arquitectónicos complejos de manera que funcione perfectamente en dispositivos móviles sin perder el impacto visual.",
                 solution: "Desarrollamos un sistema de grid flexible que se adapta inteligentemente a cualquier pantalla, manteniendo la jerarquía visual y la calidad de las imágenes.",
-                galleryImages: ["🌐", "📐", "🏗️"]
+                galleryImages: ["img/img/exp1.jpg", "img/img/exp1.jpg", "img/img/exp1.jpg"]
             },
             4: {
-                title: "Proyecto 4 - Ilustración Digital",
-                client: "Editorial Moderna",
+                title: "Broche bordado",
+                client: "Criminal Cyrcus",
                 year: "2024",
-                category: "Ilustración Digital",
-                icon: "💎",
+                category: "Diseño Textil",
+                iconType: "image",
+                icon: "img/img/brocheregalo.jpg",
                 gradient: "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
                 description: "Serie de ilustraciones para un libro infantil, combinando técnicas digitales con un estilo único que captura la imaginación de los niños.",
                 challenge: "Crear ilustraciones que fueran atractivas para niños pero también apreciadas por padres, manteniendo coherencia visual en 40+ ilustraciones.",
                 solution: "Desarrollamos un estilo artístico distintivo con personajes memorables y paleta de colores vibrante pero armoniosa. Cada ilustración cuenta una historia por sí misma.",
-                galleryImages: ["🎨", "✏️", "🖌️"]
+                galleryImages: ["img/img/brocheregalo.jpg", "img/img/brocheregalo.jpg", "img/img/brocheregalo.jpg"]
             },
             5: {
-                title: "Proyecto 5 - Diseño Editorial",
-                client: "Revista Cultural",
+                title: "Calidez nostálgica",
+                client: "Taller 7",
                 year: "2023",
-                category: "Diseño Editorial",
+                category: "Diseño Textil",
                 iconType: "video",
                 icon: "img/video/videot7.mp4",
                 gradient: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
@@ -786,14 +789,14 @@
                 challenge: "Modernizar una publicación de 30 años de historia sin perder su esencia, haciéndola relevante para nuevas generaciones.",
                 solution: "Mantuvimos elementos icónicos de la revista mientras introducimos una retícula moderna y tipografía contemporánea. El resultado respeta la tradición pero se siente completamente actual.",
                 galleryImages: ["img/img/moodboardt7.jpeg", "img/img/patronhakama.jpg", "img/img/bordadot7.jpg"]
-
             },
             6: {
-                title: "Proyecto 6 - Motion Graphics",
-                client: "Agencia Digital",
+                title: "Calidez silvestre",
+                client: "OPR Sistemas de Configuración",
                 year: "2024",
-                category: "Motion Graphics",
-                icon: "img/img/20.jpg",
+                category: "Diseño Textil",
+                iconType: "image",
+                icon: "img/img/19.jpg",
                 gradient: "linear-gradient(135deg, #30cfd0 0%, #330867 100%)",
                 description: "Producción de animaciones y motion graphics para campaña digital de producto, incluyendo videos explicativos y contenido para redes sociales.",
                 challenge: "Comunicar características técnicas complejas de forma visual y entretenida en videos de menos de 30 segundos.",
@@ -814,53 +817,7 @@
             document.getElementById('detail-year').textContent = project.year;
             document.getElementById('detail-category').textContent = project.category;
             document.getElementById('detail-description').textContent = project.description;
-            document.getElementById('detail-challenge').textContent = project.challenge;
-            document.getElementById('detail-solution').textContent = project.solution;
-            
-            // Hero con ícono y gradiente
-            const hero = document.getElementById('detail-hero');
-            hero.style.background = project.gradient;
-            
-            if (project.iconType === 'image') {
-                hero.innerHTML = `<img src="${project.icon}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 30px;">`;
-            } else if (project.iconType === 'video') {
-                hero.innerHTML = `<video autoplay loop muted style="width: 100%; height: 100%; object-fit: cover; border-radius: 30px;">
-                    <source src="${project.icon}" type="video/mp4">
-                </video>`;
-            } else {
-                hero.textContent = project.icon; // Para emojis
-            }
-            
-            // Galería de imágenes con emojis únicos por proyecto
-            const gallery = document.getElementById('detail-gallery');
-            gallery.innerHTML = `
-                <div class="detail-image" style="background: ${project.gradient}">
-                    <img src="${project.galleryImages[0]}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
-                </div>
-                <div class="detail-image" style="background: ${project.gradient}">
-                   <img src="${project.galleryImages[1]}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
-                </div>
-                <div class="detail-image" style="background: ${project.gradient}">
-                    <img src="${project.galleryImages[2]}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
-                </div>
-            `;
-            
-            // Mostrar página de detalle
-            mainPage.style.display = 'none';
-            detailPage.classList.add('active');
-            window.scrollTo(0, 0);
-        }
-
-        // Función para ocultar detalle del proyecto
-        function hideProjectDetail() {
-            const detailPage = document.getElementById('project-detail');
-            const mainPage = document.getElementById('main-page');
-            
-            detailPage.classList.remove('active');
-            mainPage.style.display = 'block';
-            window.scrollTo(0, 0);
-        }
-
+            document.getElementById('detail-challenge').textContent
         // Función para scroll suave
         function scrollToSection(sectionId) {
             event.preventDefault();
