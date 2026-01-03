@@ -856,17 +856,16 @@
             
             // Galería de imágenes con imágenes reales
             const gallery = document.getElementById('detail-gallery');
-            gallery.innerHTML = `
-                <div class="detail-image">
-                    <img src="${project.galleryImages[0]}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
-                </div>
-                <div class="detail-image">
-                    <img src="${project.galleryImages[1]}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
-                </div>
-                <div class="detail-image">
-                    <img src="${project.galleryImages[2]}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
-                </div>
-            `;
+            // Generar galería dinámicamente según cantidad de imágenes
+            let galleryHTML = '';
+            project.galleryImages.forEach(imageSrc => {
+                galleryHTML += `
+                    <div class="detail-image">
+                        <img src="${imageSrc}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+                    </div>
+                `;
+            });
+            gallery.innerHTML = galleryHTML;
             
             // Mostrar página de detalle
             mainPage.style.display = 'none';
