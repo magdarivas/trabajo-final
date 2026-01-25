@@ -148,12 +148,18 @@ const projectsData = {
     },
 };
 
+// Variable global para guardar la posición del scroll
+let scrollPosition = 0;
+
 // Función para mostrar detalle del proyecto
 function showProjectDetail(projectId) {
+    // Guardar la posición actual del scroll ANTES de cambiar de página
+    scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+    
     const project = projectsData[projectId];
     const detailPage = document.getElementById("project-detail");
     const mainPage = document.getElementById("main-page");
-
+    
     // Llenar los datos
     document.getElementById("detail-title").textContent = project.title;
     document.getElementById("detail-client").textContent = project.client;
@@ -220,7 +226,10 @@ function hideProjectDetail() {
 
     detailPage.classList.remove("active");
     mainPage.style.display = "block";
-    window.scrollTo(0, 0);
+    
+    // Restaurar la posición del scroll guardada
+    window.scrollTo(0, scrollPosition);
+    
     return false;
 }
 
