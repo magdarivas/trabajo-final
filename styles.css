@@ -250,7 +250,19 @@ h2 {
 .project-overlay p {
     color: #b0b0b0;
 }
-
+.project-tag {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
 /* Página de Detalle del Proyecto */
 .project-detail {
     display: none;
