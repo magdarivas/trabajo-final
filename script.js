@@ -101,11 +101,11 @@ const projectsData = {
         icon: "img/video/videot7.mp4",
         gradient: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
         description:
-            "Rediseño completo de revista cultural trimestral, incluyendo sistema de retículas, tipografía y dirección de arte fotográfica.",
+            "Envolvente zero-waste inspirado en la hakama y la estética vintage.",
         challenge:
-            "Modernizar una publicación de 30 años de historia sin perder su esencia, haciéndola relevante para nuevas generaciones.",
+            "Diseñar y confeccionar un envolvente (es decir, una prenda que no define del todo la figura) que utilice un patronaje zero-waste (sin desperdicio de tela), cuya inspiración incial debe ser una prenda tradicional que utilice plisado.",
         solution:
-            "Mantuvimos elementos icónicos de la revista mientras introducimos una retícula moderna y tipografía contemporánea. El resultado respeta la tradición pero se siente completamente actual.",
+            "La hakama es una prenda tradicional japonesa aparentemente simple, que se caracteriza por su construcción simétrica de cinco pliegues delanteros y dos traseros. A partir de esta construcción realicé una capa externa inspirado en ella y el uso de cuerdas (comunes en la vestimenta tradicional nipona). Para la capa interna, se creé un patrón bordadoa partir de la vista lateral formada por sus pliegues de las piezas externas (frontal y trasera). Dando una estética entre artesanal, elegante y vintage, se confeccionó mediante la utilización de dos tipos de lino (distinto gramaje y color) en conjunto al bordado en hilo con aplicaciones de pedrería.",
         galleryImages: ["img/img/moodboardt7.jpeg", "img/img/patronhakama.jpg", "img/img/bordadot7.jpg"],
     },
     6: {
@@ -120,7 +120,7 @@ const projectsData = {
         challenge:
             "Realizar una colección de patrones continuos a partir de unidades de repetición, con distintos desplazamientos de este.",
         solution:
-            "Desarrollé una colección inspirándome en elementos de bosque como hojas y hongos. Primero los dibujé y pinté en acuarela manualmente las distintas figuras por separado para luego digitalizarlas y crear distintas unidades de repetición, jugando con variaciones de distribución, color y aprovechando el uso de mismos elementos combinados con figuras variadas.",
+            "Desarrollé una colección inspirándome en elementos de bosque como hojas y hongos. Primero los dibujé y pinté en acuarela manualmente las distintas figuras por separado para luego digitalizarlas y crear distintas unidades de repetición, jugando con variaciones de distribución, color y aprovechando el uso de mismos elementos combinados con figuras variadas. Mi idea era que, a pesar de contar con diversos elementos simultáneos, los colores y la apariencia propia del acuerela permiten una estética suavizada y que permite dar la idea de inmersión en la naturaleza.",
         galleryImages: ["img/img/6.jpg", "img/img/11.jpg", "img/img/16.jpg"],
     },
 };
