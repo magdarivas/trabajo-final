@@ -163,6 +163,7 @@ h2 {
 /* Diferentes tamaños para grid dinámico */
 .project-card:nth-child(1) {
     grid-column: span 2;
+    grid-row: span 2;
 }
 .project-card:nth-child(2) {
     grid-row: span 2;
