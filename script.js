@@ -17,11 +17,7 @@ const projectsData = {
             "En búsqueda de un sello distintivo en una práctica donde las posibilidades son casi infinitas, se desarrolló una metología propia basada en la investigación y la experimentación. Tras varias iteraciones materiales y compositivas, se cayó en cuenta que estos no bastarían por sí solos. Luego de una búsqueda de relatos locales poco difundidos, se quiso poner en valor a las mitologías chilenas, cuya propia sociedad casi no recuerda o reconoce.",
             "Colección de cinturones tipo faja inspirados en La Pincoya y La Añañuca, mitos del sur y del norte de Chile respectivamente. De manera intencional, se elgieron dos personajes femeninos por la fuerte relación simbólica entre mujer y bordado, con sus diversas connotaciones a lo largo de la historia. Es una propuesta que resulta como punto de inicio para poner en valor el bordado y los relatos locales.",
         ],
-        galleryImages: [
-            "img/img/XXXX.jpg",
-            "img/img/XXXX.jpg",
-            "img/img/XXXX.jpg",
-        ],
+        galleryImages: ["img/img/XXXX.jpg", "img/img/XXXX.jpg", "img/img/XXXX.jpg"],
     },
     2: {
         title: "Bolso tejido a telar",
@@ -37,11 +33,7 @@ const projectsData = {
             "Realizar un accesorio o colección a partir de una de las técnicas de los textiles andinos aprendidos durante el ramo.",
         solution:
             "Se realizó un bolso pequeño tejido a telar, el cual funciona tanto como cartera como riñonera. La idea es que el usuario le inserte su propia correa o cinturón respectivamente y así pueda ir alternando su función a gusto.",
-        galleryImages: [
-            "img/img/textilesandinos.jpg",
-            "img/img/textilesandinos.jpg",
-            "img/img/textilesandinos.jpg",
-        ],
+        galleryImages: ["img/img/textilesandinos.jpg", "img/img/textilesandinos.jpg", "img/img/textilesandinos.jpg"],
     },
     3: {
         title: "Mad Smile",
@@ -123,8 +115,7 @@ const projectsData = {
         iconType: "video",
         icon: "img/video/videot7.mp4",
         gradient: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
-        description:
-            "Envolvente zero-waste inspirado en la hakama y la estética vintage.",
+        description: "Envolvente zero-waste inspirado en la hakama y la estética vintage.",
         challenge:
             "Diseñar y confeccionar un envolvente (es decir, una prenda que no define del todo la figura) que utilice un patronaje zero-waste (sin desperdicio de tela), cuya inspiración incial debe ser una prenda tradicional que utilice plisado.",
         solution:
@@ -155,34 +146,108 @@ let scrollPosition = 0;
 function showProjectDetail(projectId) {
     // Guardar la posición actual del scroll ANTES de cambiar de página
     scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-    
+
     const project = projectsData[projectId];
     const detailPage = document.getElementById("project-detail");
     const mainPage = document.getElementById("main-page");
-    
+
     // Llenar los datos
     document.getElementById("detail-title").textContent = project.title;
     document.getElementById("detail-client").textContent = project.client;
     document.getElementById("detail-year").textContent = project.year;
     document.getElementById("detail-category").textContent = project.category;
     document.getElementById("detail-description").textContent = project.description;
-    
+
     // Challenge con soporte para múltiples párrafos
     const challengeElement = document.getElementById("detail-challenge");
     if (Array.isArray(project.challenge)) {
         challengeElement.innerHTML = project.challenge
-            .map(p => `<p style="font-size: 1.1rem; line-height: 1.8; color: #666; margin-bottom: 1rem;">${p}</p>`)
-            .join('');
+            .map((p) => `<p style="font-size: 1.1rem; line-height: 1.8; color: #666; margin-bottom: 1rem;">${p}</p>`)
+            .join("");
     } else {
         challengeElement.textContent = project.challenge;
     }
-    
+
     // Solution con soporte para múltiples párrafos
     const solutionElement = document.getElementById("detail-solution");
     if (Array.isArray(project.solution)) {
         solutionElement.innerHTML = project.solution
-            .map(p => `<p style="font-size: 1.1rem; line-height: 1.8; color: #666; margin-bottom: 1rem;">${p}</p>`)
-            .join('');
+            .map((p) => `<p style="font-size: 1.1rem; line-height: 1.8; color: #666; margin-bottom: 1rem;">${p}</p>`)
+            .join("");
+    } else {
+        solutionElement.textContent = project.solution;
+    }
+
+    // Hero con ícono y gradiente
+    const hero = document.getElementById("detail-hero");
+    hero.style.background = project.gradient;
+
+    if (project.iconType === "image") {
+        hero.innerHTML = `<img src="${project.icon}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 30px;">`;
+    } else if (project.iconType === "video") {
+        hero.innerHTML = `<video autoplay loop muted style="width: 100%; height: 100%; object-fit: cover; border-radius: 30px;">
+            <source src="${project.icon}" type="video/mp4">
+        </video>`;
+    } else {
+        hero.textContent = project.icon;
+    }
+
+    // Galería de imágenes con imágenes reales
+    const gallery = document.getElementById("detail-gallery");
+    let galleryHTML = "";
+    project.galleryImages.forEach((imageSrc) => {
+        galleryHTML += `
+            <div class="detail-image">
+                <img src="${imageSrc}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px; cursor: pointer;" onclick="openLightbox('${imageSrc}')">
+            </div>
+        `;
+    });
+    gallery.innerHTML = galleryHTML;
+
+    // Mostrar página de detalle
+    mainPage.style.display = "none";
+    detailPage.classList.add("active");
+    window.scrollTo(0, 0);
+}
+
+// Variable global para guardar la posición del scroll
+let scrollPosition = 0;
+
+// Variable global para guardar la posición del scroll
+let scrollPosition = 0;
+
+// Función para mostrar detalle del proyecto
+function showProjectDetail(projectId) {
+    // Guardar la posición actual del scroll ANTES de cambiar de página
+    scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+    const project = projectsData[projectId];
+    const detailPage = document.getElementById("project-detail");
+    const mainPage = document.getElementById("main-page");
+
+    // Llenar los datos
+    document.getElementById("detail-title").textContent = project.title;
+    document.getElementById("detail-client").textContent = project.client;
+    document.getElementById("detail-year").textContent = project.year;
+    document.getElementById("detail-category").textContent = project.category;
+    document.getElementById("detail-description").textContent = project.description;
+
+    // Challenge con soporte para múltiples párrafos
+    const challengeElement = document.getElementById("detail-challenge");
+    if (Array.isArray(project.challenge)) {
+        challengeElement.innerHTML = project.challenge
+            .map((p) => `<p style="font-size: 1.1rem; line-height: 1.8; color: #666; margin-bottom: 1rem;">${p}</p>`)
+            .join("");
+    } else {
+        challengeElement.textContent = project.challenge;
+    }
+
+    // Solution con soporte para múltiples párrafos
+    const solutionElement = document.getElementById("detail-solution");
+    if (Array.isArray(project.solution)) {
+        solutionElement.innerHTML = project.solution
+            .map((p) => `<p style="font-size: 1.1rem; line-height: 1.8; color: #666; margin-bottom: 1rem;">${p}</p>`)
+            .join("");
     } else {
         solutionElement.textContent = project.solution;
     }
@@ -226,10 +291,10 @@ function hideProjectDetail() {
 
     detailPage.classList.remove("active");
     mainPage.style.display = "block";
-    
+
     // Restaurar la posición del scroll guardada
     window.scrollTo(0, scrollPosition);
-    
+
     return false;
 }
 
