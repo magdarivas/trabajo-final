@@ -17,7 +17,7 @@ const projectsData = {
             "En búsqueda de un sello distintivo en una práctica donde las posibilidades son casi infinitas, se desarrolló una metología propia basada en la investigación y la experimentación. Tras varias iteraciones materiales y compositivas, se cayó en cuenta que estos no bastarían por sí solos. Luego de una búsqueda de relatos locales poco difundidos, se quiso poner en valor a las mitologías chilenas, cuya propia sociedad casi no recuerda o reconoce.",
             "Colección de cinturones tipo faja inspirados en La Pincoya y La Añañuca, mitos del sur y del norte de Chile respectivamente. De manera intencional, se elgieron dos personajes femeninos por la fuerte relación simbólica entre mujer y bordado, con sus diversas connotaciones a lo largo de la historia. Es una propuesta que resulta como punto de inicio para poner en valor el bordado y los relatos locales.",
         ],
-        galleryImages: ["img/img/XXXX.jpg", "img/img/XXXX.jpg", "img/img/XXXX.jpg"],
+        galleryImages: ["img/img/PT3.jpg", "img/img/PT4.jpg", "img/img/PT5.jpg", "img/img/PT6.jpg","img/img/PT7.jpg", "img/img/PT8.jpg"],
     },
     2: {
         title: "Bolso tejido a telar",
