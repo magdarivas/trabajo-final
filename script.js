@@ -237,12 +237,45 @@ function scrollToSection(sectionId) {
     }
 }
 
+// Variables para el lightbox
+let currentImages = [];
+let currentImageIndex = 0;
+
 // Función para abrir lightbox
 function openLightbox(imageSrc) {
+    // Obtener todas las imágenes de la galería actual
+    const galleryImages = document.querySelectorAll('.detail-image img');
+    currentImages = Array.from(galleryImages).map(img => img.src);
+    
+    // Encontrar el índice de la imagen clickeada
+    currentImageIndex = currentImages.indexOf(imageSrc);
+    
+    // Mostrar la imagen
+    showLightboxImage();
+    
     const lightbox = document.getElementById("lightbox");
-    const lightboxImg = document.getElementById("lightbox-img");
-    lightboxImg.src = imageSrc;
     lightbox.classList.add("active");
+}
+
+// Función para mostrar imagen en el lightbox
+function showLightboxImage() {
+    const lightboxImg = document.getElementById("lightbox-img");
+    const counter = document.querySelector(".lightbox-counter");
+    
+    lightboxImg.src = currentImages[currentImageIndex];
+    counter.textContent = `${currentImageIndex + 1} / ${currentImages.length}`;
+}
+
+// Función para navegar a la imagen anterior
+function previousImage() {
+    currentImageIndex = (currentImageIndex - 1 + currentImages.length) % currentImages.length;
+    showLightboxImage();
+}
+
+// Función para navegar a la siguiente imagen
+function nextImage() {
+    currentImageIndex = (currentImageIndex + 1) % currentImages.length;
+    showLightboxImage();
 }
 
 // Función para cerrar lightbox
@@ -251,11 +284,24 @@ function closeLightbox() {
     lightbox.classList.remove("active");
 }
 
+
 // Cerrar lightbox al hacer click en la X o fuera de la imagen
 document.addEventListener("DOMContentLoaded", function () {
     const closeBtn = document.querySelector(".lightbox-close");
     if (closeBtn) {
         closeBtn.addEventListener("click", closeLightbox);
+    }
+
+    // Botones de navegación
+    const prevBtn = document.querySelector(".lightbox-prev");
+    const nextBtn = document.querySelector(".lightbox-next");
+    
+    if (prevBtn) {
+        prevBtn.addEventListener("click", previousImage);
+    }
+    
+    if (nextBtn) {
+        nextBtn.addEventListener("click", nextImage);
     }
 
     // Cerrar lightbox al hacer click fuera de la imagen
@@ -267,4 +313,17 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
+    
+    // Navegación con teclado (flechas izquierda/derecha y ESC)
+    document.addEventListener("keydown", function(e) {
+        if (lightbox.classList.contains("active")) {
+            if (e.key === "ArrowLeft") {
+                previousImage();
+            } else if (e.key === "ArrowRight") {
+                nextImage();
+            } else if (e.key === "Escape") {
+                closeLightbox();
+            }
+        }
+    });
 });
