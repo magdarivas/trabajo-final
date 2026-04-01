@@ -537,7 +537,65 @@ footer {
 .lightbox-close:hover {
     color: #667eea;
 }
+/* Flechas del lightbox */
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 1rem;
+    user-select: none;
+    transition: color 0.3s;
+    z-index: 3001;
+}
 
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    color: #667eea;
+}
+
+.lightbox-prev {
+    left: 20px;
+}
+
+.lightbox-next {
+    right: 20px;
+}
+
+/* Contador de imágenes */
+.lightbox-counter {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    font-size: 1.2rem;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    z-index: 3001;
+}
+
+/* Responsive para flechas */
+@media (max-width: 768px) {
+    .lightbox-prev,
+    .lightbox-next {
+        font-size: 40px;
+        padding: 0.5rem;
+    }
+    
+    .lightbox-prev {
+        left: 10px;
+    }
+    
+    .lightbox-next {
+        right: 10px;
+    }
+}
 /* Animaciones */
 @keyframes fadeInUp {
     from {
