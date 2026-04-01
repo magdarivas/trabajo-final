@@ -192,7 +192,7 @@ function showProjectDetail(projectId) {
         hero.textContent = project.icon;
     }
 
-    // Galería de imágenes con imágenes reales
+   // Galería de imágenes con imágenes reales
 const gallery = document.getElementById("detail-gallery");
 let galleryHTML = "";
 project.galleryImages.forEach((imageSrc, index) => {
@@ -237,18 +237,23 @@ function scrollToSection(sectionId) {
     }
 }
 
-// Variables para el lightbox
+// Variables globales para el lightbox
 let currentImages = [];
 let currentImageIndex = 0;
 
 // Función para abrir lightbox
-function openLightbox(imageSrc, index) {
+function openLightbox(imageSrc, imageIndex) {
+    console.log("Abriendo lightbox - imageSrc:", imageSrc, "imageIndex:", imageIndex);
+    
     // Obtener todas las imágenes de la galería actual
     const galleryImages = document.querySelectorAll('.detail-image img');
     currentImages = Array.from(galleryImages).map(img => img.src);
     
+    console.log("Total de imágenes:", currentImages.length);
+    console.log("Índice recibido:", imageIndex);
+    
     // Usar el índice pasado como parámetro
-    currentImageIndex = index;
+    currentImageIndex = imageIndex;
     
     // Mostrar la imagen
     showLightboxImage();
@@ -262,8 +267,14 @@ function showLightboxImage() {
     const lightboxImg = document.getElementById("lightbox-img");
     const counter = document.querySelector(".lightbox-counter");
     
-    lightboxImg.src = currentImages[currentImageIndex];
-    counter.textContent = `${currentImageIndex + 1} / ${currentImages.length}`;
+    console.log("Mostrando imagen índice:", currentImageIndex, "de", currentImages.length);
+    
+    if (currentImages.length > 0 && currentImageIndex >= 0 && currentImageIndex < currentImages.length) {
+        lightboxImg.src = currentImages[currentImageIndex];
+        counter.textContent = `${currentImageIndex + 1} / ${currentImages.length}`;
+    } else {
+        console.error("Índice fuera de rango:", currentImageIndex);
+    }
 }
 
 // Función para navegar a la imagen anterior
