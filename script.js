@@ -193,16 +193,16 @@ function showProjectDetail(projectId) {
     }
 
     // Galería de imágenes con imágenes reales
-    const gallery = document.getElementById("detail-gallery");
-    let galleryHTML = "";
-    project.galleryImages.forEach((imageSrc) => {
-        galleryHTML += `
-            <div class="detail-image">
-                <img src="${imageSrc}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px; cursor: pointer;" onclick="openLightbox('${imageSrc}')">
-            </div>
-        `;
-    });
-    gallery.innerHTML = galleryHTML;
+const gallery = document.getElementById("detail-gallery");
+let galleryHTML = "";
+project.galleryImages.forEach((imageSrc, index) => {
+    galleryHTML += `
+        <div class="detail-image">
+            <img src="${imageSrc}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px; cursor: pointer;" onclick="openLightbox('${imageSrc}', ${index})">
+        </div>
+    `;
+});
+gallery.innerHTML = galleryHTML;
 
     // Mostrar página de detalle
     mainPage.style.display = "none";
@@ -242,13 +242,13 @@ let currentImages = [];
 let currentImageIndex = 0;
 
 // Función para abrir lightbox
-function openLightbox(imageSrc) {
+function openLightbox(imageSrc, index) {
     // Obtener todas las imágenes de la galería actual
     const galleryImages = document.querySelectorAll('.detail-image img');
     currentImages = Array.from(galleryImages).map(img => img.src);
     
-    // Encontrar el índice de la imagen clickeada
-    currentImageIndex = currentImages.indexOf(imageSrc);
+    // Usar el índice pasado como parámetro
+    currentImageIndex = index;
     
     // Mostrar la imagen
     showLightboxImage();
