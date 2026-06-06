@@ -56,8 +56,8 @@ const projectsData = {
             "Se realizó un bolso pequeño tejido a telar, el cual funciona tanto como cartera como riñonera. La idea es que el usuario le inserte su propia correa o cinturón respectivamente y así pueda ir alternando su función a gusto.",
         galleryImages: [
             "img/img/textilesandinos.jpg",
-            "img/img/textilesandinos1.jpg",
-            "img/img/textilesandinos2.jpg",
+            "img/img/textilesandinos1.png",
+            "img/img/textilesandinos2.png",
         ],
     },
     3: {
