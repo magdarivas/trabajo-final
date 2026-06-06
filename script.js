@@ -184,6 +184,7 @@ function showProjectDetail(projectId) {
     // Llenar los datos
     document.getElementById("detail-title").textContent = project.title;
     document.getElementById("detail-client").textContent = project.client;
+    document.getElementById("detail-client-label").textContent = project.clientLabel || "Ramo";
     document.getElementById("detail-year").textContent = project.year;
     document.getElementById("detail-category").textContent = project.category;
     document.getElementById("detail-description").textContent = project.description;
