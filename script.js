@@ -36,7 +36,7 @@ const projectsData = {
             "img/img/titulo9.jpg",
             "img/img/pack1.jpg",
             "img/img/pack2.jpg",
-            "img/img/pack3.jpg"
+            "img/img/pack3.jpg",
         ],
     },
     2: {
@@ -57,7 +57,7 @@ const projectsData = {
         galleryImages: [
             "img/img/textilesandinos.jpg",
             "img/img/textilesandinos1.jpg",
-            "img/img/textilesandinos2.jpg"
+            "img/img/textilesandinos2.jpg",
         ],
     },
     3: {
