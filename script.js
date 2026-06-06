@@ -2,6 +2,7 @@
 const projectsData = {
     1: {
         title: "Hilos Místicos",
+        clientLabel: "Ramo universitario",
         client: "Proyecto de Título",
         year: "2025",
         category: "Diseño Textil",
@@ -17,10 +18,30 @@ const projectsData = {
             "En búsqueda de un sello distintivo en una práctica donde las posibilidades son casi infinitas, se desarrolló una metología propia basada en la investigación y la experimentación. Tras varias iteraciones materiales y compositivas, se cayó en cuenta que estos no bastarían por sí solos. Luego de una búsqueda de relatos locales poco difundidos, se quiso poner en valor a las mitologías chilenas, cuya propia sociedad casi no recuerda o reconoce.",
             "Colección de cinturones tipo faja inspirados en La Pincoya y La Añañuca, mitos del sur y del norte de Chile respectivamente. De manera intencional, se elgieron dos personajes femeninos por la fuerte relación simbólica entre mujer y bordado, con sus diversas connotaciones a lo largo de la historia. Es una propuesta que resulta como punto de inicio para poner en valor el bordado y los relatos locales.",
         ],
-        galleryImages: ["img/img/PT3.jpg", "img/img/PT4.jpg", "img/img/PT5.jpg", "img/img/PT6.jpg","img/img/PT7.jpg", "img/img/PT8.jpg"],
+        galleryImages: [
+            "img/img/PT3.jpg",
+            "img/img/PT4.jpg",
+            "img/img/PT5.jpg",
+            "img/img/PT6.jpg",
+            "img/img/PT7.jpg",
+            "img/img/PT8.jpg",
+            "img/img/titulo1.jpg",
+            "img/img/titulo2.jpg",
+            "img/img/titulo3.jpg",
+            "img/img/titulo4.jpg",
+            "img/img/titulo5.jpg",
+            "img/img/titulo6.jpg",
+            "img/img/titulo7.jpg",
+            "img/img/titulo8.jpg",
+            "img/img/titulo9.jpg",
+            "img/img/pack1.jpg",
+            "img/img/pack2.jpg",
+            "img/img/pack3.jpg"
+        ],
     },
     2: {
         title: "Bolso tejido a telar",
+        clientLabel: "Ramo universitario", 
         client: "OPR Textiles Andinos",
         year: "2023",
         category: "Diseño Textil",
@@ -33,10 +54,15 @@ const projectsData = {
             "Realizar un accesorio o colección a partir de una de las técnicas de los textiles andinos aprendidos durante el ramo.",
         solution:
             "Se realizó un bolso pequeño tejido a telar, el cual funciona tanto como cartera como riñonera. La idea es que el usuario le inserte su propia correa o cinturón respectivamente y así pueda ir alternando su función a gusto.",
-        galleryImages: ["img/img/textilesandinos.jpg", "img/img/textilesandinos.jpg", "img/img/textilesandinos.jpg"],
+        galleryImages: [
+            "img/img/textilesandinos.jpg",
+            "img/img/textilesandinos1.jpg",
+            "img/img/textilesandinos2.jpg"
+        ],
     },
     3: {
         title: "Mad Smile",
+        clientLabel: "Ramo universitario",
         client: "Taller 4",
         year: "2022",
         category: "Diseño Textil",
@@ -58,6 +84,7 @@ const projectsData = {
     },
     4: {
         title: "Experimentaciones bordadas",
+        clientLabel: "Ramo universitario",
         client: "Proyecto de Título",
         year: "2025",
         category: "Diseño Textil",
@@ -87,6 +114,7 @@ const projectsData = {
     },
     5: {
         title: "Falda inspirada en huracán",
+        clientLabel: "Ramo universitario",
         client: "Taller 6",
         year: "2023",
         category: "Diseño Textil",
@@ -109,6 +137,7 @@ const projectsData = {
     },
     6: {
         title: "Calidez nostálgica",
+        clientLabel: "Ramo universitario",
         client: "Taller 7",
         year: "2024",
         category: "Diseño Textil",
@@ -124,6 +153,7 @@ const projectsData = {
     },
     7: {
         title: "Calidez silvestre",
+        clientLabel: "Ramo universitario",
         client: "OPR Sistemas de Configuración desde el Textil",
         year: "2023",
         category: "Diseño Textil",
