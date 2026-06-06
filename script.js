@@ -56,8 +56,8 @@ const projectsData = {
             "Se realizó un bolso pequeño tejido a telar, el cual funciona tanto como cartera como riñonera. La idea es que el usuario le inserte su propia correa o cinturón respectivamente y así pueda ir alternando su función a gusto.",
         galleryImages: [
             "img/img/textilesandinos.jpg",
-            "img/img/textilesandinos1.png",
-            "img/img/textilesandinos2.png",
+            "img/img/textilesandinos1.jpg",
+            "img/img/textilesandinos2.jpg",
         ],
     },
     3: {
@@ -130,6 +130,10 @@ const projectsData = {
         galleryImages: [
             "img/img/superficieA.jpeg",
             "img/img/superficieB.jpeg",
+            "img/img/huracan1.jpg",
+            "img/img/huracan2.jpg",
+            "img/img/huracan3.jpg",
+            "img/img/huracan4.jpg",
             "img/img/look1.png",
             "img/img/look2.png",
             "img/img/look3.png",
@@ -165,7 +169,17 @@ const projectsData = {
             "Realizar una colección de patrones continuos a partir de unidades de repetición, con distintos desplazamientos de este.",
         solution:
             "Desarrollé una colección inspirándome en elementos de bosque como hojas y hongos. Primero los dibujé y pinté en acuarela manualmente las distintas figuras por separado para luego digitalizarlas y crear distintas unidades de repetición, jugando con variaciones de distribución, color y aprovechando el uso de mismos elementos combinados con figuras variadas. Mi idea era que, a pesar de contar con diversos elementos simultáneos, los colores y la apariencia propia del acuerela permiten una estética suavizada y que permite dar la idea de inmersión en la naturaleza.",
-        galleryImages: ["img/img/6.jpg", "img/img/11.jpg", "img/img/16.jpg"],
+        galleryImages: [
+            "img/img/calidezA.jpg",
+            "img/img/calidezAA.jpg",
+            "img/img/6.jpg",
+            "img/img/calidezB.jpg",
+            "img/img/calidezBB.jpg",
+            "img/img/11.jpg",
+            "img/img/calidezC.jpg",
+            "img/img/calidezCC.jpg",
+            "img/img/16.jpg",
+        ],
     },
 };
 
