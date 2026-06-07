@@ -51,6 +51,10 @@ nav {
 .nav-links a:hover {
     color: #667eea;
 }
+.nav-links a.active {
+    color: #667eea;
+    font-weight: 600;
+}
 
 /* Hero Section */
 .hero {
