@@ -337,6 +337,14 @@ function closeLightbox() {
     lightbox.classList.remove("active");
 }
 
+// Función para subir al inicio de la página interna
+function scrollToDetailTop() {
+    const detailPage = document.getElementById("project-detail");
+    detailPage.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
 
 // Cerrar lightbox al hacer click en la X o fuera de la imagen
 document.addEventListener("DOMContentLoaded", function () {
@@ -377,6 +385,26 @@ document.addEventListener("DOMContentLoaded", function () {
             } else if (e.key === "Escape") {
                 closeLightbox();
             }
+        }
+    });
+    // Mostrar/ocultar botón scroll-top en página PRINCIPAL
+    window.addEventListener("scroll", function () {
+        const btnMain = document.getElementById("scroll-top-main");
+        if (window.pageYOffset > 300) {
+            btnMain.classList.add("visible");
+        } else {
+            btnMain.classList.remove("visible");
+        }
+    });
+
+    // Mostrar/ocultar botón scroll-top en página INTERNA
+    const detailPage = document.getElementById("project-detail");
+    detailPage.addEventListener("scroll", function () {
+        const btnDetail = document.getElementById("scroll-top-detail");
+        if (detailPage.scrollTop > 300) {
+            btnDetail.classList.add("visible");
+        } else {
+            btnDetail.classList.remove("visible");
         }
     });
 });
