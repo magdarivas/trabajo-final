@@ -34,9 +34,9 @@ const projectsData = {
             "img/img/titulo7.jpg",
             "img/img/titulo8.jpg",
             "img/img/titulo9.jpg",
-            "img/img/pack1.jpg",
-            "img/img/pack2.jpg",
             "img/img/pack3.jpg",
+            "img/img/pack2.jpg",
+            "img/img/pack1.jpg",
         ],
     },
     2: {
