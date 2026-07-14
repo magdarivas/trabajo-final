@@ -186,7 +186,7 @@ const projectsData = {
         year: "2023",
         category: "Diseño Textil",
         iconType: "image",
-        icon: "img/img/patrongrilla.png",
+        icon: "img/img/patrones3.jpg",
         gradient: "linear-gradient(135deg, #30cfd0 0%, #330867 100%)",
         description: "Superficies construidas a partir de una unidad de repetición",
         challenge:
