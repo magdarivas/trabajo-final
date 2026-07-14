@@ -178,6 +178,28 @@ const projectsData = {
             "img/img/16.jpg",
         ],
     },
+        8: {
+        title: "Superficies de lectura continua",
+        clientLabel: "Ramo universitario",
+        client: "OPR Sistemas de Configuración desde el Textil",
+        year: "2023",
+        category: "Diseño Textil",
+        iconType: "image",
+        icon: "img/img/patrongrilla.png",
+        gradient: "linear-gradient(135deg, #30cfd0 0%, #330867 100%)",
+        description: "Colección de patrones continuos para estampado",
+        challenge:
+            "Trabajos de superficies de lectura continua con una unidad base de repetición (rapport), pensados para la realización de estampados.",
+        solution:
+            "Además de mi colección 'Calidez Silvestre', para la asignatura de Sistemas de Configruación desde el Textil trabaje con otras inspiraciones para realizar patrones que se reptien continuamente. Uno de ellos fue a partir de un patrón de la naturaleza: las flores, donde extraje y adecué la unidad de repetición desde una imagen referencial. Otra fue un rapport que construí a partir de una grilla hecha con triángulos, donde aproveché de extraer la superficie que se había creado con las flores y se realizaron otras. Por último, utilizando una mancha de acuarela con una mezcla de múltiples colores, la digitalicé y adapté para generar un patrón de lectura continua, el cual después mandé a estampar en una tela..",
+        galleryImages: [
+            "img/img/patrones2.jpg",
+            "img/img/patrones3.jpg",
+            "img/img/patrones4.jpg",
+            "img/img/patrones5.jpg",
+            "img/img/patrones6.jpg",
+        ],
+    },
 };
 
 // Variable global para guardar la posición del scroll
