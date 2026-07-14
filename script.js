@@ -198,6 +198,7 @@ const projectsData = {
             "img/img/patrones4.jpg",
             "img/img/patrones5.jpg",
             "img/img/patrones6.jpg",
+            "img/img/patrones7.jpg",
         ],
     },
 };
