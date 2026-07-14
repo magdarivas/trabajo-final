@@ -67,7 +67,7 @@ const projectsData = {
         year: "2022",
         category: "Diseño Textil",
         iconType: "image",
-        icon: "img/img/tallercuatro.jpg",
+        icon: "img/img/tallercuatrobolso.jpg",
         gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
         description:
             "Bolso modificado inspirado en el gato de Cheshire de Alicia en el País de las Maravillas, versión de Disney.",
