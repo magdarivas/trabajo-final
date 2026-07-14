@@ -187,9 +187,9 @@ const projectsData = {
         iconType: "image",
         icon: "img/img/patrongrilla.png",
         gradient: "linear-gradient(135deg, #30cfd0 0%, #330867 100%)",
-        description: "Colección de patrones continuos para estampado",
+        description: "Superficies construidas a partir de una unidad de repetición",
         challenge:
-            "Trabajos de superficies de lectura continua con una unidad base de repetición (rapport), pensados para la realización de estampados.",
+            "Construir superficies de lectura continua con una unidad base de repetición (rapport), pensados para la realización de estampados en textiles.",
         solution:
             "Además de mi colección 'Calidez Silvestre', para la asignatura de Sistemas de Configruación desde el Textil trabaje con otras inspiraciones para realizar patrones que se reptien continuamente. Uno de ellos fue a partir de un patrón de la naturaleza: las flores, donde extraje y adecué la unidad de repetición desde una imagen referencial. Otra fue un rapport que construí a partir de una grilla hecha con triángulos, donde aproveché de extraer la superficie que se había creado con las flores y se realizaron otras. Por último, utilizando una mancha de acuarela con una mezcla de múltiples colores, la digitalicé y adapté para generar un patrón de lectura continua, el cual después mandé a estampar en una tela..",
         galleryImages: [
