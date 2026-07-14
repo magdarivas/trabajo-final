@@ -80,6 +80,7 @@ const projectsData = {
             "img/img/tallercuatro2.png",
             "img/img/tallercuatro3.png",
             "img/img/tallercuatro4.png",
+            "img/img/tallercuatro5.png",
         ],
     },
     4: {
