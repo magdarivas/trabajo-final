@@ -191,7 +191,9 @@ h2 {
 .project-card:nth-child(7) {
     grid-row: span 2;
 }
-
+.project-card:nth-child(8) {
+    grid-row: span 2;
+}
 .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3);
