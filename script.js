@@ -43,7 +43,7 @@ const projectsData = {
         title: "Trabajo con Margarita Ovalle",
         clientLabel: "Empresa", 
         client: "Margarita Ovalle",
-        year: "2025-hoy",
+        year: "2025 - Actualidad",
         category: "Diseño Gráfico y Editorial",
         iconType: "image",
         icon: "img/img/eros-phyque.jpg",
@@ -53,12 +53,15 @@ const projectsData = {
         challenge:
             "Realizar contenido digital para redes sociales, manejar comunicación con potenciales clientes y adptaciones y ediciones de libros para su fabricación a través de AmazonKDP.",
         solution:
-            "...",
+            "Margarita Ovalle es una psicóloga experta en Mitología Comparada analizada desde la psicología junguiana. Realiza diversos cusos online, un diplomado y también ofrece libros, en torno a esta temática."
+            "De manera de poder difundir su robusta trayectoria y respaldo académico, utiliza redes sociales como Instagram y Youtube para publicar contenido. Desde finales del año 2025, he trabajo como su asistente en diseño, en donde me dedico a manejar y crear su contenido en redes sociales: videos, posts tipo afiche y carrusel. También tengo la responsabildiad de la comunicación con los potenciales clientes a través de Isntagram. Para llegar a más potenciales interesados en la mitología, utilizamos campañas promocionadas de Meta, las que permiten que más personas visiten e interactúen el perfil de Instagram de Margarita (@margaritaovallev) como también potenciar las visitas a su sitio web (https://margaritaovalle.com/). Este último está cosntruido a través de WordPress, el cual actualmente es administrado por otra persona que trabaja para Margarita, pero que cuento con acceso para poder revisar las métricas del sitio, como también la conexión reciente que realicé con Google Anlytics, de manera de poder concoer mejor a la audiencia que llega. De manera complementaria al trabajo en Marketing Digital, también la asisto en la edición de sus libros, los cuales, para facilitar la distribución y producción, ahora se stán trabajando con Amazon KDP. Esto permite ofrecer los libros en diferentes formatos a los usarios: digital, tapa dura y tapa balnda, y gracias a su respuesta rápida ante las dudas y problemas y al encargarle maquetas de las versiones en físico, he podido ir aprendiendo cada vez más la edición y adaptación d elos libros."
+            "Adicionalmente, para poder ofrecer los cursos de manera asincrónica, con DaVinci Resolve edito y limpio las grabaciones de cursos anteriores, las cuales subo a dos platafomras en que Margarita posee cuenta: Teachable y Hotmart. Para ellos, es necesario crear y diagaramar portadas en distntas proporciones para los cursos. En el caso particular de Teachable, y con una lógica similar a Wordpress y Wix, la plataforma ofrece crear un homepage y páginas secundarias para la escuela y cursos de MArgarita, donde me encargué de ir editando una por una.",
+            "Por último, si bien no posee un manual de marca como tal, para poder obtener un lenguaje gráfico coherente, trabajo con tipografías tanto de sus posts anteriores como las utilizadas en los libros, y lo mismo ocurre para la decisión de colores y elementos gráficos. Para poder tener una mayor coherencia entre las distintas redes, le creé un logo en base a un elemento simbólico que utiliza constantemente (el laberinto) y su nombre con la misma tipografía que trabaja en lso títulos d elos libros. De esta manera, se buscó establecer un logo simple, de colores planos (negro, blanco y ocre) como dictan las tendencias actuales de diseño y que fuese reconocible y legible. Al presentar un logo, esto facilita crear varientes para banners u otros contenidos digitales.",
         galleryImages: [
             "img/img/logoMO.png",
             "img/img/masterclass.png",
             "img/video/videolibros.mp4",
-            "img/img/sabiasque.png",
+            "img/img/postsabiasque.png",
             "img/video/videojung.mp4",
         ],
     },
