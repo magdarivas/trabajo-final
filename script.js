@@ -40,6 +40,29 @@ const projectsData = {
         ],
     },
     2: {
+        title: "Trabajo con Margarita Ovalle",
+        clientLabel: "Empresa", 
+        client: "Margarita Ovalle",
+        year: "2025-hoy",
+        category: "Diseño Gráfico y Editorial",
+        iconType: "image",
+        icon: "img/img/eros-phyque.jpg",
+        gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+        description:
+            "Trabajo en contenido y manejo de redes sociales (marketing digital); y adaptación y edición de libros",
+        challenge:
+            "Realizar contenido digital para redes sociales, manejar comunicación con potenciales clientes y adptaciones y ediciones de libros para su fabricación a través de AmazonKDP.",
+        solution:
+            "...",
+        galleryImages: [
+            "img/img/logoMO.png",
+            "img/img/masterclass.png",
+            "img/video/videolibros.mp4",
+            "img/img/sabiasque.png",
+            "img/video/videojung.mp4",
+        ],
+    },
+    3: {
         title: "Bolso tejido a telar",
         clientLabel: "Ramo universitario", 
         client: "OPR Textiles Andinos",
@@ -60,7 +83,7 @@ const projectsData = {
             "img/img/textilesandinos.jpg",
         ],
     },
-    3: {
+    4: {
         title: "Mad Smile",
         clientLabel: "Ramo universitario",
         client: "Taller 4",
@@ -83,7 +106,7 @@ const projectsData = {
             "img/img/tallercuatro5.png",
         ],
     },
-    4: {
+    5: {
         title: "Experimentaciones bordadas",
         clientLabel: "Ramo universitario",
         client: "Proyecto de Título",
@@ -113,7 +136,7 @@ const projectsData = {
             "img/img/exp0.3.jpg",
         ],
     },
-    5: {
+    6: {
         title: "Falda inspirada en huracán",
         clientLabel: "Ramo universitario",
         client: "Taller 6",
@@ -140,7 +163,7 @@ const projectsData = {
             "img/img/look3.png",
         ],
     },
-    6: {
+    7: {
         title: "Calidez nostálgica",
         clientLabel: "Ramo universitario",
         client: "Taller 7",
@@ -156,7 +179,7 @@ const projectsData = {
             "La hakama es una prenda tradicional japonesa aparentemente simple, que se caracteriza por su construcción simétrica de cinco pliegues delanteros y dos traseros. A partir de esta construcción realicé una capa externa inspirado en ella y el uso de cuerdas (comunes en la vestimenta tradicional nipona). Para la capa interna, se creé un patrón bordadoa partir de la vista lateral formada por sus pliegues de las piezas externas (frontal y trasera). Dando una estética entre artesanal, elegante y vintage, se confeccionó mediante la utilización de dos tipos de lino (distinto gramaje y color) en conjunto al bordado en hilo con aplicaciones de pedrería.",
         galleryImages: ["img/img/moodboardt7.jpeg", "img/img/patronhakama.jpg", "img/img/bordadot7.jpg"],
     },
-    7: {
+    8: {
         title: "Calidez silvestre",
         clientLabel: "Ramo universitario",
         client: "OPR Sistemas de Configuración desde el Textil",
@@ -179,7 +202,7 @@ const projectsData = {
             "img/img/16.jpg",
         ],
     },
-        8: {
+        9: {
         title: "Superficies de lectura continua",
         clientLabel: "Ramo universitario",
         client: "OPR Sistemas de Configuración desde el Textil",
