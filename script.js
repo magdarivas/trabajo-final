@@ -238,6 +238,8 @@ let scrollPosition = 0;
 function showProjectDetail(projectId) {
     // Guardar la posición actual del scroll ANTES de cambiar de página
     scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+    // Guardar en la URL qué proyecto está abierto
+    window.location.hash = `proyecto-${projectId}`;
 
     const project = projectsData[projectId];
     const detailPage = document.getElementById("project-detail");
@@ -325,10 +327,13 @@ function hideProjectDetail() {
 
     detailPage.classList.remove("active");
     mainPage.style.display = "block";
-
+    
+    // Limpiar el hash de la URL al volver
+    history.pushState("", document.title, window.location.pathname);
+    
     // Restaurar la posición del scroll guardada
     window.scrollTo(0, scrollPosition);
-
+    
     return false;
 }
 
@@ -424,6 +429,14 @@ function scrollToDetailTop() {
 
 // Cerrar lightbox al hacer click en la X o fuera de la imagen
 document.addEventListener("DOMContentLoaded", function () {
+    // Revisar si hay un proyecto en la URL al cargar la página
+    const hash = window.location.hash;
+    if (hash && hash.startsWith("#proyecto-")) {
+        const projectId = parseInt(hash.replace("#proyecto-", ""));
+        if (projectsData[projectId]) {
+            showProjectDetail(projectId);
+        }
+    }
     const closeBtn = document.querySelector(".lightbox-close");
     if (closeBtn) {
         closeBtn.addEventListener("click", closeLightbox);
