@@ -289,24 +289,25 @@ function showProjectDetail(projectId) {
     const gallery = document.getElementById("detail-gallery");
     let galleryHTML = "";
     project.galleryImages.forEach((mediaSrc, index) => {
-        const isVideo = mediaSrc.endsWith('.mp4') || mediaSrc.endsWith('.webm') || mediaSrc.endsWith('.mov');
-        
-        if (isVideo) {
-            galleryHTML += `
-                <div class="detail-image">
-                    <video controls style="width: 100%; height: auto; display: block; border-radius: 20px;">
-                        <source src="${mediaSrc}" type="video/mp4">
-                    </video>
-                </div>
-            `;
-        } else {
-            galleryHTML += `
-                <div class="detail-image">
-                    <img src="${mediaSrc}" style="width: 100%; height: auto; display: block; object-fit: contain; border-radius: 20px; cursor: pointer;" onclick="openLightbox('${mediaSrc}', ${index})">
-                </div>
-            `;
-        }
-    });
+    const isVideo = mediaSrc.endsWith('.mp4') || mediaSrc.endsWith('.webm') || mediaSrc.endsWith('.mov');
+    
+    if (isVideo) {
+        galleryHTML += `
+            <div class="detail-image" onclick="openLightbox('${mediaSrc}', ${index})" style="cursor: pointer; position: relative;">
+                <video style="width: 100%; height: auto; display: block; border-radius: 20px; pointer-events: none;">
+                    <source src="${mediaSrc}" type="video/mp4">
+                </video>
+                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.5); border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: white;">▶</div>
+            </div>
+        `;
+    } else {
+        galleryHTML += `
+            <div class="detail-image">
+                <img src="${mediaSrc}" style="width: 100%; height: auto; display: block; object-fit: contain; border-radius: 20px; cursor: pointer;" onclick="openLightbox('${mediaSrc}', ${index})">
+            </div>
+        `;
+    }
+});
     
     gallery.innerHTML = galleryHTML;
 
@@ -348,41 +349,50 @@ let currentImages = [];
 let currentImageIndex = 0;
 
 // Función para abrir lightbox
-function openLightbox(imageSrc, imageIndex) {
-    console.log("Abriendo lightbox - imageSrc:", imageSrc, "imageIndex:", imageIndex);
-    
-    // Obtener todas las imágenes de la galería actual
-    const galleryImages = document.querySelectorAll('.detail-image img');
-    currentImages = Array.from(galleryImages).map(img => img.src);
-    
-    console.log("Total de imágenes:", currentImages.length);
-    console.log("Índice recibido:", imageIndex);
-    
+function openLightbox(mediaSrc, mediaIndex) {
+    // Obtener todos los medios de la galería actual (imágenes y videos)
+    const galleryMedia = document.querySelectorAll('.detail-image img, .detail-image video source');
+    currentImages = Array.from(galleryMedia).map(el => el.src || el.getAttribute('src'));
+
     // Usar el índice pasado como parámetro
-    currentImageIndex = imageIndex;
-    
-    // Mostrar la imagen
+    currentImageIndex = mediaIndex;
+
+    // Mostrar el medio
     showLightboxImage();
-    
+
     const lightbox = document.getElementById("lightbox");
     lightbox.classList.add("active");
 }
 
-// Función para mostrar imagen en el lightbox
+// Función para mostrar imagen o video en el lightbox
 function showLightboxImage() {
     const lightboxImg = document.getElementById("lightbox-img");
+    const lightboxVideo = document.getElementById("lightbox-video");
+    const lightboxVideoSrc = document.getElementById("lightbox-video-src");
     const counter = document.querySelector(".lightbox-counter");
-    
-    console.log("Mostrando imagen índice:", currentImageIndex, "de", currentImages.length);
-    
+
     if (currentImages.length > 0 && currentImageIndex >= 0 && currentImageIndex < currentImages.length) {
-        lightboxImg.src = currentImages[currentImageIndex];
+        const mediaSrc = currentImages[currentImageIndex];
+        const isVideo = mediaSrc.endsWith('.mp4') || mediaSrc.endsWith('.webm') || mediaSrc.endsWith('.mov');
+
         counter.textContent = `${currentImageIndex + 1} / ${currentImages.length}`;
-    } else {
-        console.error("Índice fuera de rango:", currentImageIndex);
+
+        if (isVideo) {
+            // Pausar y ocultar imagen, mostrar video
+            lightboxImg.style.display = "none";
+            lightboxVideo.style.display = "block";
+            lightboxVideoSrc.src = mediaSrc;
+            lightboxVideo.load(); // Recargar el video
+            lightboxVideo.play();
+        } else {
+            // Pausar y ocultar video, mostrar imagen
+            lightboxVideo.pause();
+            lightboxVideo.style.display = "none";
+            lightboxImg.style.display = "block";
+            lightboxImg.src = mediaSrc;
+        }
     }
 }
-
 // Función para navegar a la imagen anterior
 function previousImage() {
     currentImageIndex = (currentImageIndex - 1 + currentImages.length) % currentImages.length;
@@ -398,6 +408,8 @@ function nextImage() {
 // Función para cerrar lightbox
 function closeLightbox() {
     const lightbox = document.getElementById("lightbox");
+    const lightboxVideo = document.getElementById("lightbox-video");
+    lightboxVideo.pause(); // Pausar video al cerrar
     lightbox.classList.remove("active");
 }
 
