@@ -173,11 +173,10 @@ h2 {
     grid-row: span 2;
 }
 .project-card:nth-child(3) {
-    grid-row: span 3;
-}
-
-.project-card:nth-child(4) {
     grid-row: span 2;
+}
+.project-card:nth-child(4) {
+    grid-row: span 3;
 }
 
 .project-card:nth-child(5) {
@@ -185,13 +184,17 @@ h2 {
 }
 
 .project-card:nth-child(6) {
-    grid-row: span 3;
+    grid-row: span 2;
 }
 
 .project-card:nth-child(7) {
+    grid-row: span 3;
+}
+
+.project-card:nth-child(8) {
     grid-row: span 2;
 }
-.project-card:nth-child(8) {
+.project-card:nth-child(9) {
     grid-row: span 2;
 }
 .project-card:hover {
