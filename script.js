@@ -284,18 +284,31 @@ function showProjectDetail(projectId) {
     } else {
         hero.textContent = project.icon;
     }
-
-   // Galería de imágenes con imágenes reales
-const gallery = document.getElementById("detail-gallery");
-let galleryHTML = "";
-project.galleryImages.forEach((imageSrc, index) => {
-    galleryHTML += `
-        <div class="detail-image">
-            <img src="${imageSrc}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px; cursor: pointer;" onclick="openLightbox('${imageSrc}', ${index})">
-        </div>
-    `;
-});
-gallery.innerHTML = galleryHTML;
+    
+    // Galería de imágenes y videos
+    const gallery = document.getElementById("detail-gallery");
+    let galleryHTML = "";
+    project.galleryImages.forEach((mediaSrc, index) => {
+        const isVideo = mediaSrc.endsWith('.mp4') || mediaSrc.endsWith('.webm') || mediaSrc.endsWith('.mov');
+        
+        if (isVideo) {
+            galleryHTML += `
+                <div class="detail-image">
+                    <video controls style="width: 100%; height: auto; display: block; border-radius: 20px;">
+                        <source src="${mediaSrc}" type="video/mp4">
+                    </video>
+                </div>
+            `;
+        } else {
+            galleryHTML += `
+                <div class="detail-image">
+                    <img src="${mediaSrc}" style="width: 100%; height: auto; display: block; object-fit: contain; border-radius: 20px; cursor: pointer;" onclick="openLightbox('${mediaSrc}', ${index})">
+                </div>
+            `;
+        }
+    });
+    
+    gallery.innerHTML = galleryHTML;
 
     // Mostrar página de detalle
     mainPage.style.display = "none";
