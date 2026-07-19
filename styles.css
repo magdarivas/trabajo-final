@@ -429,7 +429,12 @@ h2 {
     object-fit: contain;
     border-radius: 20px;
 }
-
+.detail-image video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
 /* Sección Sobre Mí */
 .about {
     background: rgba(102, 126, 234, 0.05);
