@@ -435,7 +435,7 @@ h2 {
     height: 200px; /* 👈 altura fija para todos */
     border-radius: 20px;
     overflow: hidden;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /*color fondo imagen*/
+    background: #ffffff; /*color fondo imagen*/
 }
 
 .detail-image img {
