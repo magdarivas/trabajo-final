@@ -429,6 +429,7 @@ function scrollToDetailTop() {
 }
 
 // Cerrar lightbox al hacer click en la X o fuera de la imagen
+
 document.addEventListener("DOMContentLoaded", function () {
     // Revisar si hay un proyecto en la URL al cargar la página
     const hash = window.location.hash;
@@ -438,6 +439,26 @@ document.addEventListener("DOMContentLoaded", function () {
             showProjectDetail(projectId);
         }
     }
+
+    // Detectar cuando el navegador navega hacia atrás/adelante
+    window.addEventListener("popstate", function () {
+        const currentHash = window.location.hash;
+        if (currentHash && currentHash.startsWith("#proyecto-")) {
+            // Si el hash es un proyecto, abrirlo
+            const projectId = parseInt(currentHash.replace("#proyecto-", ""));
+            if (projectsData[projectId]) {
+                showProjectDetail(projectId);
+            }
+        } else {
+            // Si no hay hash de proyecto, volver a la página principal
+            const detailPage = document.getElementById("project-detail");
+            const mainPage = document.getElementById("main-page");
+            detailPage.classList.remove("active");
+            mainPage.style.display = "block";
+            window.scrollTo(0, scrollPosition);
+        }
+    });
+
     const closeBtn = document.querySelector(".lightbox-close");
     if (closeBtn) {
         closeBtn.addEventListener("click", closeLightbox);
