@@ -540,11 +540,15 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Mostrar/ocultar botón scroll-top en página INTERNA
+   // Mostrar/ocultar botón scroll-top en página INTERNA
     const detailPage = document.getElementById("project-detail");
     detailPage.addEventListener("scroll", function () {
         const btnDetail = document.getElementById("scroll-top-detail");
-        if (detailPage.scrollTop > 300) {
+        const detailHero = document.getElementById("detail-hero");
+        const heroBottom = detailHero.getBoundingClientRect().bottom;
+    
+        // Aparece cuando el hero ya no es visible
+        if (heroBottom < 0) {
             btnDetail.classList.add("visible");
         } else {
             btnDetail.classList.remove("visible");
