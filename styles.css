@@ -140,6 +140,7 @@ section {
 
 #proyectos {
     padding: 5rem 5%;
+    scroll-margin-top: 6rem; /* 👈 compensa la altura del nav fijo */
 }
 
 h2 {
@@ -243,6 +244,13 @@ h2 {
 .project-card:nth-child(7) .project-image {
     background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
 }
+.project-card:nth-child(8) .project-image {
+    background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+}
+.project-card:nth-child(9) .project-image {
+    background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+}
+
 
 .project-overlay {
     position: absolute;
@@ -655,7 +663,10 @@ footer {
     .project-card:nth-child(3),
     .project-card:nth-child(4),
     .project-card:nth-child(5),
-    .project-card:nth-child(6) {
+    .project-card:nth-child(6),
+    .project-card:nth-child(7),
+    .project-card:nth-child(8),
+    .project-card:nth-child(9) {
         grid-column: span 1;
         grid-row: span 1;
     }
