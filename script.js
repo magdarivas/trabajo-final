@@ -199,13 +199,19 @@ const projectsData = {
         solution:
             "Desarrollé una colección inspirándome en elementos de bosque como hojas y hongos. Primero los dibujé y pinté en acuarela manualmente las distintas figuras por separado para luego digitalizarlas y crear distintas unidades de repetición, jugando con variaciones de distribución, color y aprovechando el uso de mismos elementos combinados con figuras variadas. Mi idea era que, a pesar de contar con diversos elementos simultáneos, los colores y la apariencia propia del acuerela permiten una estética suavizada y que permite dar la idea de inmersión en la naturaleza.",
         galleryImages: [
+            "img/img/moodboardcalidez.jpg",
             "img/img/calidezA.jpg",
             "img/img/6.jpg",
+            "img/img/cal1varA.jpg",
+            "img/img/cal1varB.jpg",
             "img/img/calidezB.jpg",
             "img/img/11.jpg",
+            "img/img/cal2varA.jpg",
+            "img/img/cal2varB.jpg",
             "img/img/calidezC.jpg",
             "img/img/16.jpg",
-            "img/img/moodboardcalidez.jpg",
+            "img/img/cal3varA.jpg",
+            "img/img/cal3varB.jpg",
         ],
     },
         9: {
