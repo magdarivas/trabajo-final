@@ -249,9 +249,10 @@ const projectsData = {
         description: "Colección de patrones continuos para estampado",
         challenge:
             "Asistir en el contenido de Instagram de Martín Bordador (@martinbordador) mediante el diseño de posts informativos tipo storytelling como estrategia de venta",
-        solution:
+        solution: [
             "Por encargo y planificación d ela diseñadora de tiempo completo en Martín Bordador, se me encargó realizar posts tipo carrusel de temas asignados relacionados al bordado. Con el uso de Canva y apoyo de Illustrator, trabajé con los colores y tipografías que utiliza la marca para diagramar los posts.",
             "Lo relevante para los posts es tanto el aspecto gráfico como la información. Con una libertad relativamente amplia, pude proponer diagramaciones más dinámicas, y con los feedbacks y correcciones de la diseñadora de jornada completa fui mejorando progresivamente. En cuanto a la información, busqué en diversos sitios, en español e ingle´s, para asegurar su fidelidad y que fuese lo suficientemente atractiva.",
+        ],
         galleryImages: [
             "img/video/sabiasqueDIABORD.mp4",
             "img/video/sabiasqueAGUJAS.mp4",
@@ -259,7 +260,6 @@ const projectsData = {
             "img/video/sabiasqueLENT.mp4",
             "img/video/sabiasqueSEDA.mp4",
             "img/video/sabiasqueGANCH.mp4",
-   
         ],
     },
 };
