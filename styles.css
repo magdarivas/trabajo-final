@@ -427,7 +427,7 @@ h2 {
 .detail-image {
     flex: 1 1 300px;
     max-width: calc(50% - 1rem);
-    height: 200px; /* 👈 altura fija para todas */
+    height: 250px; /* 👈 altura fija para todas */
     border-radius: 20px;
     overflow: hidden;
     background: #f5f5f5;
@@ -436,16 +436,20 @@ h2 {
 .detail-image img {
     width: 100%;
     height: 100%;
+    min-height: 250px; /* 👈 fuerza que cubra todo el alto */
     display: block;
-    object-fit: cover; /* 👈 recorta para llenar el espacio uniformemente */
+    object-fit: cover;
+    object-position: center;
     border-radius: 20px;
 }
 
 .detail-image video {
     width: 100%;
     height: 100%;
+    min-height: 250px; /* 👈 fuerza que cubra todo el alto */
     display: block;
     object-fit: cover;
+    object-position: center;
     border-radius: 20px;
 }
 
