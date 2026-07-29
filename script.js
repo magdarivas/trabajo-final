@@ -205,6 +205,7 @@ const projectsData = {
             "img/img/11.jpg",
             "img/img/calidezC.jpg",
             "img/img/16.jpg",
+            "img/img/moodboardcalidez.jpg",
         ],
     },
         9: {
