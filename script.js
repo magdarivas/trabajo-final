@@ -238,7 +238,7 @@ const projectsData = {
         ],
     },
     10: {
-        title: "Posts Sabías que...",
+        title: "Posts ¿Sabías qué?",
         clientLabel: "Empresa",
         client: "Martín Bordador",
         year: "2025-2026",
