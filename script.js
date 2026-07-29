@@ -530,31 +530,31 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     });
-    // Mostrar/ocultar botón scroll-top en página PRINCIPAL
-    window.addEventListener("scroll", function () {
-        const btnMain = document.getElementById("scroll-top-main");
-        if (window.pageYOffset > 300) {
-            btnMain.classList.add("visible");
-        } else {
-            btnMain.classList.remove("visible");
-        }
-    });
-
-   // Mostrar/ocultar botón scroll-top en página INTERNA
-    const detailPage = document.getElementById("project-detail");
-    detailPage.addEventListener("scroll", function () {
-        const btnDetail = document.getElementById("scroll-top-detail");
-        const detailHero = document.getElementById("detail-hero");
-        const heroBottom = detailHero.getBoundingClientRect().bottom;
     
-        // Aparece cuando el hero ya no es visible
-        if (heroBottom < 0) {
-            btnDetail.classList.add("visible");
-        } else {
-            btnDetail.classList.remove("visible");
-        }
-    });
-     // Detectar sección visible y marcar link activo en navegación
+// Mostrar/ocultar botón scroll-top en página PRINCIPAL
+window.addEventListener("scroll", function () {
+    const btnMain = document.getElementById("scroll-top-main"); // 👈 main
+    if (window.pageYOffset > 300) {
+        btnMain.classList.add("visible");
+    } else {
+        btnMain.classList.remove("visible");
+    }
+});
+
+// Mostrar/ocultar botón scroll-top en página INTERNA
+const detailPage = document.getElementById("project-detail");
+detailPage.addEventListener("scroll", function () {
+    const btnDetail = document.getElementById("scroll-top-detail"); // 👈 detail
+    const detailHero = document.getElementById("detail-hero");
+    const heroBottom = detailHero.getBoundingClientRect().bottom;
+    if (heroBottom < 0) {
+        btnDetail.classList.add("visible");
+    } else {
+        btnDetail.classList.remove("visible");
+    }
+});
+    
+    // Detectar sección visible y marcar link activo en navegación
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll(".nav-links a");
 
