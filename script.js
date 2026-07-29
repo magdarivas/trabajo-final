@@ -244,7 +244,7 @@ const projectsData = {
         year: "2025-2026",
         category: "Diseño Gráfico",
         iconType: "image",
-        icon: "img/img/logoMB.jpg",
+        icon: "img/img/logoMB.png",
         gradient: "linear-gradient(135deg, #30cfd0 0%, #330867 100%)",
         description: "Colección de patrones continuos para estampado",
         challenge:
