@@ -74,7 +74,7 @@ const projectsData = {
         year: "2023",
         category: "Diseño Textil",
         iconType: "image",
-        icon: "img/img/textilesandinos.jpg",
+        icon: "img/img/textilesandinos3.jpg",
         gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
         description:
             "Bolso tejido en hilos de algodón en cuatro colores, con argollas y cierre metálicos para facilitar su uso. Producción artesanal",
