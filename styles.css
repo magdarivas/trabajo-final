@@ -198,6 +198,9 @@ h2 {
 .project-card:nth-child(9) {
     grid-row: span 2;
 }
+.project-card:nth-child(10) {
+        grid-row: span 2;
+}
 .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3);
@@ -250,7 +253,9 @@ h2 {
 .project-card:nth-child(9) .project-image {
     background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
 }
-
+.project-card:nth-child(10) .project-image {
+    background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+}
 
 .project-overlay {
     position: absolute;
