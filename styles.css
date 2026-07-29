@@ -332,6 +332,8 @@ h2 {
     border-radius: 30px;
     overflow: hidden;
     margin-bottom: 1.5rem;
+    margin-left: 3rem;  /* 👈 margen izquierdo */
+    margin-right: 3rem; /* 👈 margen derecho */
     display: flex;
     align-items: center;
     justify-content: center;
