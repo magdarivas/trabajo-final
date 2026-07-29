@@ -296,18 +296,18 @@ function showProjectDetail(projectId) {
     const isVideo = mediaSrc.endsWith('.mp4') || mediaSrc.endsWith('.webm') || mediaSrc.endsWith('.mov');
     
     if (isVideo) {
-        galleryHTML += `
-            <div class="detail-image" onclick="openLightbox('${mediaSrc}', ${index})" style="cursor: pointer; position: relative;">
-                <video style="width: 100%; height: auto; display: block; border-radius: 20px; pointer-events: none;">
-                    <source src="${mediaSrc}" type="video/mp4">
-                </video>
-                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.5); border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: white;">▶</div>
-            </div>
-        `;
+    galleryHTML += `
+        <div class="detail-image" onclick="openLightbox('${mediaSrc}', ${index})" style="cursor: pointer; position: relative; background: ${project.gradient};">
+            <video style="width: 100%; height: 100%; display: block; border-radius: 20px; pointer-events: none;">
+                <source src="${mediaSrc}" type="video/mp4">
+            </video>
+            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.5); border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: white;">▶</div>
+        </div>
+    `;
     } else {
         galleryHTML += `
-            <div class="detail-image">
-                <img src="${mediaSrc}" style="width: 100%; height: auto; display: block; object-fit: contain; border-radius: 20px; cursor: pointer;" onclick="openLightbox('${mediaSrc}', ${index})">
+            <div class="detail-image" style="background: ${project.gradient};">
+                <img src="${mediaSrc}" style="width: 100%; height: 100%; display: block; object-fit: cover; object-position: center; border-radius: 20px; cursor: pointer;" onclick="openLightbox('${mediaSrc}', ${index})">
             </div>
         `;
     }
