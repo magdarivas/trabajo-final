@@ -157,6 +157,7 @@ const projectsData = {
         solution:
             "Se desarrollaron patrones con bordado como dos superficies: una con estampado directo y metalizado y otra con aplicaciones de textiles reutilizados. Se bocetearon diversas propuestas de prendas que integran esas superficies y se llevó a cabo la confección de una de ellas (la falda).",
         galleryImages: [
+            "img/img/taller6.jpg",
             "img/img/superficieA.jpeg",
             "img/img/superficieB.jpeg",
             "img/img/huracan1.jpg",
