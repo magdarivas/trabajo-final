@@ -183,7 +183,12 @@ const projectsData = {
             "Diseñar y confeccionar un envolvente (es decir, una prenda que no define del todo la figura) que utilice un patronaje zero-waste (sin desperdicio de tela), cuya inspiración incial debe ser una prenda tradicional que utilice plisado.",
         solution:
             "La hakama es una prenda tradicional japonesa aparentemente simple, que se caracteriza por su construcción simétrica de cinco pliegues delanteros y dos traseros. A partir de esta construcción realicé una capa externa inspirado en ella y el uso de cuerdas (comunes en la vestimenta tradicional nipona). Para la capa interna, se creé un patrón bordadoa partir de la vista lateral formada por sus pliegues de las piezas externas (frontal y trasera). Dando una estética entre artesanal, elegante y vintage, se confeccionó mediante la utilización de dos tipos de lino (distinto gramaje y color) en conjunto al bordado en hilo con aplicaciones de pedrería.",
-        galleryImages: ["img/img/moodboardt7.jpeg", "img/img/patronhakama.jpg", "img/img/bordadot7.jpg"],
+        galleryImages: [
+            "img/img/T7Lamina.jpg",
+            "img/img/moodboardt7.jpeg",
+            "img/img/patronhakama.jpg",
+            "img/img/bordadot7.jpg",
+        ],
     },
     8: {
         title: "Calidez silvestre",
